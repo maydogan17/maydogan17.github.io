@@ -64,11 +64,18 @@ ul {
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #f69ec4, #f9dd94);
+    background: linear-gradient(45deg, #25503e, #faebd7);
   }
 
 a {
     color: #222542;
     font-weight: bold;
     text-decoration: none;
+}
+a:hover{
+  color: #faebd7;
+}
+
+a:focus{
+  color: antiquewhite;
 }
