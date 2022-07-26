@@ -1,1 +1,0 @@
-# maydogan17.github.io
