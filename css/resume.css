@@ -79,3 +79,9 @@ a:hover{
 a:focus{
   color: antiquewhite;
 }
+a:active{
+  color: #faebd7;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2px;
+}
