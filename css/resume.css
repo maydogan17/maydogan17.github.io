@@ -1,5 +1,5 @@
 body {
-  background-color: #9facb8;
+  background-color: #eae6e5;
 }
 
 hr {
@@ -7,81 +7,89 @@ hr {
   display: none;
 }
 
-h1, h2, h4, p, address, li{
-    font-family: "Helvetica", "Arial", sans-serif;
+h1,
+h2,
+h4,
+p,
+address,
+li {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #12130f;
 }
 
 h1 {
-  color: antiquewhite;
+  color: #12130f;
   text-align: center;
 }
 
-h2{
-    color: antiquewhite;
+h2 {
+  color: #5b9279;
 }
 
-h4{
-    color: #25503e;
-    font-size: large;
+h4 {
+  color: #4da85f;
+  font-size: large;
 }
 
 nav {
   text-align: center;
   font-weight: bold;
-  font-variant: small-caps;
-  font;
+  text-transform: uppercase;
 }
 
-section{
-    border: 2px solid #474343;
-    border-radius: 25px;
-    margin: 20px;
-    padding: 20px;
-    
+section {
+  border: 3px solid #8f8073;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 20px;
 }
 
 ul {
-    display: block;
-    margin-left: -10px;
-  }
-  
-  ul li {
-    display: block;
-    position: relative;
-  }
-  
-  ul li:not(:last-child) {
-    margin-bottom: 16px;
-  }
-  
-  ul li:before {
-    content: "";
-    position: absolute;
-    top: 1.2em;
-    left: -30px;
-    margin-top: -.9em;
-    background: #f69ec4;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #25503e, #faebd7);
-  }
+  display: block;
+  margin-left: -10px;
+}
+
+ul li {
+  display: block;
+  position: relative;
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+ul li:before {
+  content: "";
+  position: absolute;
+  top: 1.2em;
+  left: -30px;
+  margin-top: -0.9em;
+  background: #f69ec4;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #25503e, #faebd7);
+}
 
 a {
-    color: #222542;
-    font-weight: bold;
-    text-decoration: none;
+  color: #12130f;
+  font-weight: bold;
+  text-decoration: none;
 }
-a:hover{
-  color: #faebd7;
+a:hover {
+  color: #4da85f;
 }
 
-a:focus{
-  color: antiquewhite;
+a:focus {
+  color: #5b9279;
 }
-a:active{
-  color: #faebd7;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 2px;
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer img {
+  padding: 10px;
+  height: 35px;
 }
