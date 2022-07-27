@@ -7,23 +7,28 @@ body {
   background-color: var(--color5);
 }
 
-hr {
-  border: 2px solid black;
-  display: none;
-}
-
 h1,
 h2,
 h4,
 p,
 address,
-li {
+li,
+a {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
   color: var(--color1);
 }
 
+header {
+  text-align: center;
+}
+
+hr {
+  border: 2px solid var(--color1);
+}
+
 h1 {
+  display: inline-block;
   color: var(--color1);
   text-align: center;
   text-transform: uppercase;
@@ -45,14 +50,20 @@ nav {
   font-weight: bold;
   text-transform: uppercase;
 }
-nav p {
-  line-height: 1.5;
+
+nav div a {
+  padding: 2%;
+  line-height: 2.5;
   font-size: 120%;
+}
+nav div {
+  display: inline-block;
+  width: 30%;
+  margin: 0 auto;
+  padding: 1%;
 }
 
 section {
-  border: 3px solid var(--color4);
-  border-radius: 25px;
   margin: 20px;
   padding: 20px;
 }
