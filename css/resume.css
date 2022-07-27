@@ -1,5 +1,10 @@
 body {
-  background-color: #eae6e5;
+  --color1: #12130f;
+  --color2: #5b9279;
+  --color3: #020887;
+  --color4: #8f8073;
+  --color5: #eae6e5;
+  background-color: var(--color5);
 }
 
 hr {
@@ -14,20 +19,21 @@ p,
 address,
 li {
   font-family: "Helvetica", "Arial", sans-serif;
-  color: #12130f;
+  color: var(--color1);
 }
 
 h1 {
-  color: #12130f;
+  color: var(--color1);
   text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
-  color: #5b9279;
+  color: var(--color2);
 }
 
 h4 {
-  color: #4da85f;
+  color: var(--color3);
   font-size: large;
 }
 
@@ -38,7 +44,7 @@ nav {
 }
 
 section {
-  border: 3px solid #8f8073;
+  border: 3px solid var(--color4);
   border-radius: 25px;
   margin: 20px;
   padding: 20px;
@@ -77,11 +83,11 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #4da85f;
+  color: var(--color3);
 }
 
 a:focus {
-  color: #5b9279;
+  color: var(--color2);
 }
 
 footer {
