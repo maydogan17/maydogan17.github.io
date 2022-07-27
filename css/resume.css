@@ -1,9 +1,9 @@
 body {
-  --color1: #152315;
-  --color2: #5b9279;
-  --color3: #020887;
-  --color4: #8f8073;
-  --color5: #eae6e5;
+  --color1: #000000;
+  --color2: #b80000;
+  --color3: #0d00a4;
+  --color4: #b80000;
+  --color5: #ffffff;
   background-color: var(--color5);
 }
 
@@ -18,7 +18,8 @@ h4,
 p,
 address,
 li {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
   color: var(--color1);
 }
 
@@ -31,6 +32,7 @@ h1 {
 
 h2 {
   color: var(--color2);
+  text-transform: uppercase;
 }
 
 h4 {
