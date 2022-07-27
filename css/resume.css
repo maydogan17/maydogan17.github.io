@@ -1,5 +1,5 @@
 body {
-  --color1: #12130f;
+  --color1: #152315;
   --color2: #5b9279;
   --color3: #020887;
   --color4: #8f8073;
@@ -26,6 +26,7 @@ h1 {
   color: var(--color1);
   text-align: center;
   text-transform: uppercase;
+  font-size: 300%;
 }
 
 h2 {
@@ -41,6 +42,10 @@ nav {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
+}
+nav p {
+  line-height: 1.5;
+  font-size: 120%;
 }
 
 section {
