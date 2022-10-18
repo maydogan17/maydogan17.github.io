@@ -13,3 +13,8 @@ footer {
   box-shadow: -25px -25px 50px #878787, 25px 25px 50px #ffffff,
     25px 25px 50px #878787, -25px -25px 50px #ffffff;
 }
+
+footer a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+}
