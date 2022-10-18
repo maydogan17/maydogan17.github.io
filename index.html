@@ -1,391 +1,400 @@
 <!DOCTYPE html>
-<html lang="“en”">
+<html lang="en">
   <head>
     <meta charset="“UTF-8”" />
     <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/resume.css" />
   </head>
   <body>
-    <header>
-      <h1>
-        Murat Han Aydoğan
-        <hr>
-    </h1>
-
-      <nav>
-            <div>
-                <a href="#info">Contact Information</a>
-                <br>
-                <a href="#ach">Achievements</a>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h1>
+                            Murat Han Aydoğan
+                            <hr>
+                        </h1>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="#edu">Education</a>
-                <br>
-                <a href="#skills">Skills</a>
+            <nav class="navbar-brand">
+                <div class="row">
+                    <div class="col-4">
+                        <a class="nav-link" href="#info">Contact Information</a>
+                        <a class="nav-link" href="#ach">Achievements</a>
+                    </div>
+                    <div class="col-4">
+                        <a class="nav-link" href="#edu">Education</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </div>
+                    <div class="col-4">
+                        <a class="nav-link" href="#exp">Experience</a>
+                        <a class="nav-link" href="#related">Related Coursework</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="row">
+            <div class="col-12 col-lg-6" id="info">
+                <h2>Contact Information</h2>
+                <hr>
+                <p>
+                    <ul>
+                        <li>
+                            <Address>Rumeli Feneri Yolu, Sarıyer, İstanbul</Address>
+                        </li>
+                        <li>
+                            Mail: <a href="mailto: maydogan17@ku.edu.tr">maydogan17@ku.edu.tr</a> 
+                        </li>
+                        <li>
+                            Phone: +90 505 260 64 17
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/maydogan17/">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/maydogan17">Github</a>
+                        </li>
+                    </ul>
+                </p>
             </div>
-            <div>
-                <a href="#exp">Experience</a>
-                <br>
-                <a href="#related">Related Coursework</a>
+            <div class="col-12 col-lg-6" id="edu">
+                <h2>Education</h2>
+                <hr>
+                <div>
+                <h4>Computer Engineering</h4>
+                <p>
+                    <b>Koç University</b>, College of Engineering, İstanbul | 2017 - Present
+                    <ul>
+                        <li>Current GPA: 3.28/4.00</li>
+                    </ul>   
+                </p>
+                </div>
+                <div>
+                    <h4>Media and Visual Arts</h4>
+                    <p><b>Koç University</b>, College of Social Sciences and Humanities, İstanbul | 2020 - Present
+                        <ul>
+                            <li>Double Major</li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h4>Media and Management Certificate</h4>
+                    <p>
+                        <b>Koç University</b>, College of Social Sciences and Humanities, İstanbul | 2021 - Present
+                        <ul>
+                            <li>
+                                Certificate and Track Program
+                            </li>
+                        </ul>
+                    </p>
+                </div>
             </div>
-      </nav>
-    </header>
-    <section>
-        <div id="info">
-            <h2>Contact Information</h2>
-            <hr>
-            <p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6" id="exp">
+                <h2>Experience</h2>
+                <hr>
+                <div>
+                    <h4>Research Intern</h4>
+                    <p>
+                        <b>Vrije Universiteit Amsterdam</b>, Amsterdam | July 2022 - September 2022
+                        <ul>
+                            <li>
+                                Helped develop an agent learning from huma audio feedback using reinforcement learning.
+                            </li>
+                            <li>
+                                Analyzed the collected research data.
+                            </li>
+                            <li>
+                                Gained valuable experience in the research process and scientific method.
+                            </li>
+                            <li>
+                                Conducted research on a variety of topics and drafted reports on findings.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h4>Research and Development Intern</h4>
+                    <p>
+                        <b>ART Labs</b>, İstanbul | July 2021 - September 2021
+                        <ul>
+                            <li>
+                                Worked with the R&D team and developed Python applications for
+                                texture transfer automatization.
+                            </li>
+                            <li>
+                                Worked with the marketing team and created AR-powered
+                                Instagram filters.
+                            </li>
+                            <li>
+                                Successfully conducted research projects and developed prototypes for new products.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h4>Google Casual Game Development Bootcamp Student</h4>
+                    <p>
+                        <b>Kodluyoruz</b>, İstanbul | April 2021 - July 2021
+                        <ul>
+                            <li>
+                                Worked with over 40+ people on developing a space shooter
+                                themed mobile game.
+                            </li>
+                            <li>
+                                Took extensive classes on C# programming, Unity, and game
+                                development.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h4>Software Engineering Intern</h4>
+                    <p>
+                        <b>Aselsan</b>, Ankara | June 2021 - August 2021
+                        <ul>
+                            <li>
+                                Developed a multi-purpose Windows Application for DJI Drones
+                                using the following technologies: C#, Universal Windows
+                                Platform, .NET Core, DJI Windows SDK, XAML, and Visual Studio.
+                            </li>
+                            <li>
+                                Successfully completed assigned projects within the set timeframe.
+                            </li>
+                            <li>
+                                Worked in a team environment and collaborated effectively with others.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h4>Student Mentor</h4>
+                    <p>
+                        <b>Koç University</b>, İstanbul | 2019 - Present
+                        <ul>
+                            <li>
+                                Helping international and Turkish freshman students to get used
+                                to university and guiding them in course planning.
+                            </li>
+                            <li>
+                                Successfully mentored and guided more than thirty students throughout their university journey.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h4>Ice Hockey Player</h4>
+                    <p>
+                        <b>Koç University Hockey Team</b>, İstanbul | 2017 - 2019
+                        <ul>
+                            <li>
+                                Developed teamwork, determination, and collaboration skills to
+                                meet team goals
+                            </li>
+                            <li>
+                                Trained weekly with the team for Annual University Hockey
+                                Tournament
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6" id="ach">
+                <h2>Achievements</h2>
+                <hr>
+                <p>
+                    <ul>
+                        <li>
+                            Koç University Computer Engineering Best Senior Design Project Award 2022
+                        </li>
+                        <li>
+                            Koç University Vehbi Koç Honor Award 2020 & 2021
+                        </li>
+                        <li>
+                            Koç University Anatolian Scholarship
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6" id="skills">
+                <h2>Skills</h2>
+                <hr>
+                <div>
+                <h4>Languages</h4>
+                <p>
+                    <ul>
+                        <li>
+                            English
+                        </li>
+                        <li>
+                            Turkish
+                        </li>
+                    </ul>
+                </p>
+                </div>
+                <div>
+                    <h4>Programming</h4>
+                    <p>
+                        <ul>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                C
+                            </li>
+                            <li>
+                                C++
+                            </li>
+                            <li>
+                                C#
+                            </li>
+                            <li>
+                                HTML
+                            </li>
+                            <li>
+                                Swift
+                            </li>
+                            <li>
+                                Scheme - Lisp
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h4>Software</h4>
+                    <ul>
+                        <li>
+                            Unity
+                        </li>
+                        <li>
+                            Blender
+                        </li>
+                        <li>
+                            Spark AR
+                        </li>
+                        <li>
+                            Rhino
+                        </li>
+                        <li>
+                            Microsoft Office
+                        </li>
+                        <li>
+                            Adobe Photoshop
+                        </li>
+                        <li>
+                            Adobe Illustrator
+                        </li>
+                        <li>
+                            Adobe Premiere
+                        </li>
+                        <li>
+                            MagicaVoxel
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6" id="related">
+                <h2>Related Coursework</h2>
+                <hr>
                 <ul>
                     <li>
-                        <Address>Rumeli Feneri Yolu, Sarıyer, İstanbul</Address>
+                        Data Structures & Algorithms
                     </li>
                     <li>
-                        Mail: <a href="mailto: maydogan17@ku.edu.tr">maydogan17@ku.edu.tr</a> 
+                        Java Advanced Programming
                     </li>
                     <li>
-                        Phone: +90 505 260 64 17
+                        C Programming
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/maydogan17/">LinkedIn</a>
+                        Python Programming
                     </li>
                     <li>
-                        <a href="https://github.com/maydogan17">Github</a>
-                    </li>
-                </ul>
-            </p>
-        </div>
-    </section>
-    <section>
-      <div id="edu">
-        <h2>Education</h2>
-        <hr>
-        <div>
-          <h4>Computer Engineering</h4>
-          <p>
-            <b>Koç University</b>, College of Engineering, İstanbul | 2017 - Present
-            <ul>
-                <li>Current GPA: 3.28/4.00</li>
-            </ul>   
-          </p>
-        </div>
-        <div>
-            <h4>Media and Visual Arts</h4>
-            <p><b>Koç University</b>, College of Social Sciences and Humanities, İstanbul | 2020 - Present
-                <ul>
-                    <li>Double Major</li>
-                </ul>
-            </p>
-        </div>
-        <div>
-            <h4>Media and Management Certificate</h4>
-            <p>
-                <b>Koç University</b>, College of Social Sciences and Humanities, İstanbul | 2021 - Present
-                <ul>
-                    <li>
-                        Certificate and Track Program
-                    </li>
-                </ul>
-            </p>
-        </div>
-      </div>
-    </section>
-    <section>
-        <div id="exp">
-            <h2>Experience</h2>
-            <hr>
-            <div>
-                <h4>Research Intern</h4>
-                <p>
-                    <b>Vrije Universiteit Amsterdam</b>, Amsterdam | July 2022 - September 2022
-                    <ul>
-                        <li>
-                            Helped develop an agent learning from huma audio feedback using reinforcement learning.
-                        </li>
-                        <li>
-                            Analyzed the collected research data.
-                        </li>
-                        <li>
-                            Gained valuable experience in the research process and scientific method.
-                        </li>
-                        <li>
-                            Conducted research on a variety of topics and drafted reports on findings.
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div>
-                <h4>Research and Development Intern</h4>
-                <p>
-                    <b>ART Labs</b>, İstanbul | July 2021 - September 2021
-                    <ul>
-                        <li>
-                            Worked with the R&D team and developed Python applications for
-                            texture transfer automatization.
-                        </li>
-                        <li>
-                            Worked with the marketing team and created AR-powered
-                            Instagram filters.
-                        </li>
-                        <li>
-                            Successfully conducted research projects and developed prototypes for new products.
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div>
-                <h4>Google Casual Game Development Bootcamp Student</h4>
-                <p>
-                    <b>Kodluyoruz</b>, İstanbul | April 2021 - July 2021
-                    <ul>
-                        <li>
-                            Worked with over 40+ people on developing a space shooter
-                            themed mobile game.
-                        </li>
-                        <li>
-                            Took extensive classes on C# programming, Unity, and game
-                            development.
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div>
-                <h4>Software Engineering Intern</h4>
-                <p>
-                    <b>Aselsan</b>, Ankara | June 2021 - August 2021
-                    <ul>
-                        <li>
-                            Developed a multi-purpose Windows Application for DJI Drones
-                            using the following technologies: C#, Universal Windows
-                            Platform, .NET Core, DJI Windows SDK, XAML, and Visual Studio.
-                        </li>
-                        <li>
-                            Successfully completed assigned projects within the set timeframe.
-                        </li>
-                        <li>
-                            Worked in a team environment and collaborated effectively with others.
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div>
-                <h4>Student Mentor</h4>
-                <p>
-                    <b>Koç University</b>, İstanbul | 2019 - Present
-                    <ul>
-                        <li>
-                            Helping international and Turkish freshman students to get used
-                            to university and guiding them in course planning.
-                        </li>
-                        <li>
-                            Successfully mentored and guided more than thirty students throughout their university journey.
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div>
-                <h4>Ice Hockey Player</h4>
-                <p>
-                    <b>Koç University Hockey Team</b>, İstanbul | 2017 - 2019
-                    <ul>
-                        <li>
-                            Developed teamwork, determination, and collaboration skills to
-                            meet team goals
-                        </li>
-                        <li>
-                            Trained weekly with the team for Annual University Hockey
-                            Tournament
-                        </li>
-                    </ul>
-                </p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div id="ach">
-            <h2>Achievements</h2>
-            <hr>
-            <p>
-                <ul>
-                    <li>
-                        Koç University Computer Engineering Best Senior Design Project Award 2022
+                        Swift Programming
                     </li>
                     <li>
-                        Koç University Vehbi Koç Honor Award 2020 & 2021
+                        Artificial Intelligence
                     </li>
                     <li>
-                        Koç University Anatolian Scholarship
-                    </li>
-                </ul>
-            </p>
-        </div>
-    </section>
-    <section>
-        <div id="skills">
-            <h2>Skills</h2>
-            <hr>
-            <div>
-            <h4>Languages</h4>
-            <p>
-                <ul>
-                    <li>
-                        English
+                        Database Management Systems
                     </li>
                     <li>
-                        Turkish
-                    </li>
-                </ul>
-            </p>
-            </div>
-            <div>
-                <h4>Programming</h4>
-                <p>
-                    <ul>
-                        <li>
-                            Java
-                        </li>
-                        <li>
-                            Python
-                        </li>
-                        <li>
-                            C
-                        </li>
-                        <li>
-                            C++
-                        </li>
-                        <li>
-                            C#
-                        </li>
-                        <li>
-                            HTML
-                        </li>
-                        <li>
-                            Swift
-                        </li>
-                        <li>
-                            Scheme - Lisp
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div>
-                <h4>Software</h4>
-                <ul>
-                    <li>
-                        Unity
+                        Computer Graphics
                     </li>
                     <li>
-                        Blender
+                        Software Engineering (Git Repository, GRASP-GOF patterns)
                     </li>
                     <li>
-                        Spark AR
+                        Operating Systems
                     </li>
                     <li>
-                        Rhino
+                        Computer Networks
                     </li>
                     <li>
-                        Microsoft Office
+                        Structure and Interpretation of Computer Programs
                     </li>
                     <li>
-                        Adobe Photoshop
+                        Algorithms & Complexity
                     </li>
                     <li>
-                        Adobe Illustrator
+                        Discrete Mathematics for Computer Science
                     </li>
                     <li>
-                        Adobe Premiere
+                        Principles of Programming Languages
                     </li>
                     <li>
-                        MagicaVoxel
+                        Advenced Scheme - Lisp
+                    </li>
+                    <li>
+                        Digital Design
+                    </li>
+                    <li>
+                        Design Thinking
+                    </li>
+                    <li>
+                        Marketing Research
+                    </li>
+                    <li>
+                        Media Research
+                    </li>
+                    <li>
+                        Consumer Behaviour
+                    </li>
+                    <li>
+                        Media Industries and Cultural Production
+                    </li>
+                    <li>
+                        Visual Design
                     </li>
                 </ul>
             </div>
         </div>
-    </section>
-    <section>
-        <div id="related">
-            <h2>Related Coursework</h2>
-            <hr>
-            <ul>
-                <li>
-                    Data Structures & Algorithms
-                </li>
-                <li>
-                    Java Advanced Programming
-                </li>
-                <li>
-                    C Programming
-                </li>
-                <li>
-                    Python Programming
-                </li>
-                <li>
-                    Swift Programming
-                </li>
-                <li>
-                    Artificial Intelligence
-                </li>
-                <li>
-                    Database Management Systems
-                </li>
-                <li>
-                    Computer Graphics
-                </li>
-                <li>
-                    Software Engineering (Git Repository, GRASP-GOF patterns)
-                </li>
-                <li>
-                    Operating Systems
-                </li>
-                <li>
-                    Computer Networks
-                </li>
-                <li>
-                    Structure and Interpretation of Computer Programs
-                </li>
-                <li>
-                    Algorithms & Complexity
-                </li>
-                <li>
-                    Discrete Mathematics for Computer Science
-                </li>
-                <li>
-                    Principles of Programming Languages
-                </li>
-                <li>
-                    Advenced Scheme - Lisp
-                </li>
-                <li>
-                    Digital Design
-                </li>
-                <li>
-                    Design Thinking
-                </li>
-                <li>
-                    Marketing Research
-                </li>
-                <li>
-                    Media Research
-                </li>
-                <li>
-                    Consumer Behaviour
-                </li>
-                <li>
-                    Media Industries and Cultural Production
-                </li>
-                <li>
-                    Visual Design
-                </li>
-            </ul>
-        </div>
-    </section>
-    <br>
-    <footer>
-        <hr>
-        <p>
-            <a href="https://twitter.com/murathanaydgn" target="_blank"><img src="imgs/twitter.png" alt="Twitter Logo"></a>
-            <a href="https://www.instagram.com/murathanaydgn/" target="_blank"><img src="imgs/insta.png" alt="Instagram Logo"></a>
-            <a href="https://www.linkedin.com/in/maydogan17/" target="_blank"><img src="imgs/linkedin.png" alt="LinkedIn Logo"></a>
-        </p>
-    </footer>
+        <br>
+        <footer>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <hr>
+                        <p>
+                            <a href="https://twitter.com/murathanaydgn" target="_blank"><img src="imgs/twitter.png" alt="Twitter Logo"></a>
+                            <a href="https://www.instagram.com/murathanaydgn/" target="_blank"><img src="imgs/insta.png" alt="Instagram Logo"></a>
+                            <a href="https://www.linkedin.com/in/maydogan17/" target="_blank"><img src="imgs/linkedin.png" alt="LinkedIn Logo"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>              
+    </div>
+    <script> src= "node_modules/bootstrap/dist/js/bootstrap.bundle.js"</script>
   </body>
 </html>

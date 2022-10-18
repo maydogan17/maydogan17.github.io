@@ -20,11 +20,13 @@ a {
 }
 
 header {
+  margin-top: 5%;
   text-align: center;
 }
 
 hr {
   border: 2px solid var(--color1);
+  opacity: 1;
 }
 
 h1 {
@@ -49,21 +51,8 @@ nav {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-nav div a {
-  line-height: 2.5;
-  font-size: 120%;
-}
-nav div {
-  display: inline-block;
-  width: 30%;
-  margin: 0 auto;
-}
-
-section {
-  margin: 20px;
-  padding: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 ul {
