@@ -1,0 +1,15 @@
+.navbar {
+  background: #ffffff;
+  box-shadow: 25px 25px 50px #878787, -25px -25px 50px #ffffff;
+}
+
+footer {
+  background: #ffffff;
+  box-shadow: -25px -25px 50px #878787, 25px 25px 50px #ffffff;
+}
+
+#resume_header {
+  background: #ffffff;
+  box-shadow: -25px -25px 50px #878787, 25px 25px 50px #ffffff,
+    25px 25px 50px #878787, -25px -25px 50px #ffffff;
+}
