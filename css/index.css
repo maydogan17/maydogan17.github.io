@@ -1,17 +1,16 @@
 .navbar {
-  background: #ffffff;
-  box-shadow: 25px 25px 50px #878787, -25px -25px 50px #ffffff;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 0px 25px 50px #878787;
 }
 
 footer {
-  background: #ffffff;
-  box-shadow: -25px -25px 50px #878787, 25px 25px 50px #ffffff;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 0px -25px 50px #878787;
 }
 
 #resume_header {
-  background: #ffffff;
-  box-shadow: -25px -25px 50px #878787, 25px 25px 50px #ffffff,
-    25px 25px 50px #878787, -25px -25px 50px #ffffff;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 0px -25px 50px #878787, 0px 25px 50px #878787;
 }
 
 footer a {
