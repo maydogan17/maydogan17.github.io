@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <title>Murat Han Aydoğan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="Murat Han Aydoğan Resume" />
+    <meta property="og:title" content="Murat Han Aydoğan Portfolio" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="A resume website to showcase my web development skills."
+      content="A portfolio website to showcase my resume and projects."
     />
     <meta property="og:image" content="imgs/thumbnail.jpg" />
     <meta property="og:url" content="https://maydogan17.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -33,9 +32,7 @@
             ><i class="bi bi-code h-100"></i
           ></a>
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            <a class="nav-link" href="#resume_header">Resume</a>
-            <a class="nav-link" href="#">Other</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             <a
               class="nav-link"
               href="https://github.com/maydogan17"
@@ -51,14 +48,19 @@
           </div>
         </div>
       </header>
-      <div class="container mt-lg-5 mb-lg-5 pb-lg-5 pt-lg-5" id="greeting">
-        <div class="row mt-5 mb-5 pb-5 pt-5">
-          <div class="col-12 mb-5 pb-5">
+      <div class="container mt-lg-5 mb-lg-5 pb-lg-5 pt-lg-5" id="title">
+        <div class="row mt-5 pt-5">
+          <div class="col-12 mb-2 pb-5">
             <h4 class="display-6">"Yeess!" "No-oh-oh..." Implicit Robot Task Information from Prosody in Human Verbal Feedback</h4>
+            <br>
+            <br>
+            <div class="text-center">
+              <img src="imgs/robot.gif" class="rounded">
+          </div>
           </div>
         </div>
       </div>
-      <div class="container-fluid pt-4 pb-4" id="resume_header">
+      <div class="container-fluid pt-4 pb-4" id="authors_title">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -67,7 +69,7 @@
           </div>
         </div>
       </div>
-      <div class="container mt-5 mb-5 pt-5 pb-5" id="content">
+      <div class="container mt-5 mb-5 pt-5 pb-5" id="authors">
         <div class="row">
           <div class="col-sm-4">
             <p class="mb-0">Murat Han Aydoğan</p>
@@ -101,7 +103,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid pt-4 pb-4" id="resume_header">
+      <div class="container-fluid pt-4 pb-4" id="project_title">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -110,7 +112,7 @@
           </div>
         </div>
       </div>
-      <div class="container mt-5 mb-5 pt-5 pb-5" id="content">
+      <div class="container mt-5 mb-5 pt-5 pb-5" id="project_content">
         <div class="row">
           <div class="col-12 col-lg-12" id="exp">
             <h2 class="display-6 pb-3">Abstract</h2>
@@ -131,6 +133,7 @@
                 our early results highlight the potential of tapping into implicit voice 
                 signals to improve robot learning and human teaching efficiency.
             </p>
+            <br>
             <h2 class="display-6 pb-3">Introduction</h2>
             <p class="mb-0">
                 In order to allow users to have more control over a robot’s
@@ -238,6 +241,7 @@
                 tion [15]. In our work, we build on this work to further develop
                 an understanding of human prosodic features for intRL.
             </p>
+            <br>
             <h2 class="display-6 pb-3">Mixed-Participant Wizard-of-Oz Setup</h2>
             <p class="mb-0">
                 In order to develop an algorithm that leverages implicit
@@ -273,6 +277,7 @@
                 be released at [url-redacted] to facilitate further research in
                 the interactive learning community.
             </p>
+            <br>
             <h2 class="display-6 pb-3">Study Design</h2>
             <b>1. Participants</b>
             <p class="mb-0">
@@ -381,6 +386,325 @@
                 During the analysis, mean, max, and raw values were used as
                 candidate measures.
             </p>
+            <p class="mb-0">
+              B) MDP features: As is most reinforcement learning settings, we model the learning task as a Markov Decision
+              Process (MDP). The Q-value Q(s, a) representing the expected utility of action a at state s if the agent follows the
+              optimal policy. From it, the advantage function is calculated as:
+              A(s, a) = Q(s, a)−V (s). Recent work by Cui et al. [25] states
+              that advantage might be a better task statistic to consider than
+              the reward for analyzing social signals interpreted as evaluative
+              feedback. Our hypothesis is that the advantage function, as a
+              measure of relative performance of a given action at a given
+              state, given the overall optimal policy, would significantly
+              correlate with our prosodic features, with potential differences
+              across different teachers based on their expressivity levels.
+            </p>
+            <br>
+            <b>5. Data Analysis</b>
+            <p class="mb-0">
+              A total of 25 minutes and 7 seconds of audio was recorded
+              from 4 sessions. These recordings include the baseline teacher
+              audio and the audio recorded during the experiment. We
+              conducted a correlation analysis on the advantage values and
+              prosodic features that were extracted from the experiment sessions. Advantage values were calculated using policy iteration
+              with a 0.98 discount factor. To create a semantically consistent
+              signal, prosodic features from “no” parts were multiplied by
+              -1 to indicate negative feedback. Spearman correlation was
+              used to analyze the correlation between advantage values and
+              prosodic features, as the relationship between the two was
+              found to be non-linear.
+            </p>
+            <br>
+            <h2 class="display-6 pb-3">Results and Discussion</h2>
+            <p class="mb-0">
+              We briefly report on preliminary correlation results and
+              some qualitative observations to guide our follow-up studies.
+            </p>
+            <br>
+            <b>1. Correlation Analysis</b>
+            <p class="mb-0">
+              Our analysis for the four teachers with different baseline
+              prosody (see Table I) is summarized in Table II. It shows
+              four strong, seven moderate and five low correlations (as interpreted by standard statistics guidelines [41]), all statistically
+              significant. The results also suggest some level of variability
+              across different teacher in terms of which prosodic signal was
+              used to modulate verbal feedback. This will be a subject of
+              further investigation in a follow up study. Altogether, these
+              results give us a good basis to believe we can potentially build
+              a useful predictive model relating prosodic to MDP features
+              with a larger sample size and a perhaps a richer feedback
+              vocabulary.
+            </p>
+            <div class="text-center">
+              <img src="imgs/table12.png" class="rounded" alt="" style="  max-width: 50%; height: auto;">
+          </div>
+          <br>
+          <b>2. Qualitative Observations and Lessons Learned</b>
+          <p class="mb-0">
+            Based on participants answers on open ended questions
+            about their teaching experience, it became apparent that a
+            transparency mechanism is needed on the agent side (e.g.,
+            backchanneling everytime the agent gets feedback) to communicate responsiveness and encourage the teacher to keep going.
+            Another expected comment was that the teachers would have
+            liked to tell the robot “what” to do by giving feedback as action
+            advice. While for the sake of this work, we intentionally only
+            focused on one type of feedback to minimize sources of noise,
+            in the future we would like a prosody-sensitive algorithm to
+            include multiple types of feedback, or even free-form speech
+            to maximize usability and enhance the teaching experience.
+          </p>
+          <br>
+          <h2 class="display-6 pb-3">Conclusion and Next Steps</h2>
+          <p class="mb-0">
+            We introduced a mixed-participant Wizard-of-Oz paradigm,
+            which we believe to be a promising approach for intRL
+            researchers to study human teacher’s social signals in a way
+            that is scalable, flexible, and allows for real-time interaction.
+            Furthermore, our pilot study on shows promising results in
+            relating prosodic information such as energy and pitch in
+            relation to the task at hand, namely the advantage function.
+            Our goal is for an agent to be able use prosody as a teaching
+            signal to improve its policy performance, which we wish to
+            investigate in a future study. We are also interested in taking
+            this work a step further with a larger dataset to build a generic
+            computational model of prosody in relation to a learning task
+            defined through an MDP. Further investigations with a larger
+            participant pool, and a richer set of prosodic and MDP features
+            may also allow us to build predictive models that account for
+            the variation among people based on baseline speech data as
+            well as, potentially, demographic information.
+          </p>
+          <br>
+          <h2 class="display-6 pb-3">Acknowledgments</h2>
+          <p class="mb-0">
+            We would like to thank PI’s [Omitted for anonymization
+            purposes] and [Omitted for anonymization purposes] and
+            the Omitted for anonymization purposes] and [Omitted for
+            anonymization purposes] labs for their support and input
+            in this research. Undergraduate research assistants [Omitted
+            for anonymization purposes] and [Omitted for anonymization
+            purposes] have also contributed to this project.
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid pt-4 pb-4" id="references_title">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="display-6 mb-0">References</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 mb-5 pt-5 pb-5" id="references">
+        <div class="row">
+          <div class="col-12 col-lg-6" id="exp">
+            <p class="mb-0">
+              [1] W. B. Knox and P. Stone, “Interactively shaping agents via human
+              reinforcement: The tamer framework,” in Proceedings of the fifth international conference on Knowledge capture. ACM, 2009, pp. 9–16
+            </p>
+            <p class="mb-0">
+              [2] S. Griffith, K. Subramanian, J. Scholz, C. L. Isbell, and A. L. Thomaz,
+              “Policy shaping: Integrating human feedback with reinforcement learning,” Advances in neural information processing systems, vol. 26, 2013.
+            </p>
+            <p class="mb-0">
+              [3] T. Cederborg, I. Grover, C. L. Isbell, and A. L. Thomaz, “Policy shaping
+              with human teachers,” in Twenty-Fourth International Joint Conference
+              on Artificial Intelligence, 2015.
+            </p>
+            <p class="mb-0">
+              [4] A. C. Tenorio-Gonzalez, E. F. Morales, and L. Villasenor-Pineda, ˜
+              “Dynamic reward shaping: training a robot by voice,” in Ibero-American
+              conference on artificial intelligence. Springer, 2010, pp. 483–492.  
+            </p>
+            <p class="mb-0">
+              [5] E. S. Kim and B. Scassellati, “Learning to refine behavior using prosodic
+              feedback,” in 2007 IEEE 6th International Conference on Development
+              and Learning. IEEE, 2007, pp. 205–210.
+            </p>
+            <p class="mb-0">
+              [6] E. S. Kim, D. Leyzberg, K. M. Tsui, and B. Scassellati, “How people
+              talk when teaching a robot,” in Proceedings of the 4th ACM/IEEE
+              international conference on Human robot interaction, 2009, pp. 23–30.
+            </p>
+            <p class="mb-0">
+              [7] S. Krening, “Newtonian action advice: Integrating human verbal instruction with reinforcement learning,” 2018.      
+            </p>
+            <p class="mb-0">
+              [8] S. Krening, B. Harrison, K. M. Feigh, C. L. Isbell, M. Riedl, and
+              A. Thomaz, “Learning from explanations using sentiment and advice in
+              rl,” IEEE Transactions on Cognitive and Developmental Systems, vol. 9,
+              no. 1, pp. 44–55, 2016.  
+            </p>
+            <p class="mb-0">
+              [9] R. Zhang, F. Torabi, L. Guan, D. H. Ballard, and P. Stone, “Leveraging
+              human guidance for deep reinforcement learning tasks,” arXiv preprint
+              arXiv:1909.09906, 2019.  
+            </p>
+            <p class="mb-0">
+              [10] G. A. Rummery and M. Niranjan, On-line Q-learning using connectionist systems. University of Cambridge, Department of Engineering
+              Cambridge, UK, 1994, vol. 37. 
+            </p>
+            <p class="mb-0">
+              [11] S. P. Singh and R. S. Sutton, “Reinforcement learning with replacing
+              eligibility traces,” Machine learning, vol. 22, no. 1-3, pp. 123–158, 1996. 
+            </p>
+            <p class="mb-0">
+              [12] R. S. Sutton, A. G. Barto et al., Introduction to reinforcement learning.
+              MIT press Cambridge, 1998, vol. 135. 
+            </p>
+            <p class="mb-0">
+              [13] M. N. Nicolescu and M. J. Mataric, “Natural methods for robot task
+              learning: Instructive demonstrations, generalization and practice,” in
+              Proceedings of the second international joint conference on Autonomous
+              agents and multiagent systems, 2003, pp. 241–248. 
+            </p>
+            <p class="mb-0">
+              [14] M. Pardowitz, S. Knoop, R. Dillmann, and R. D. Zollner, “Incremental
+              learning of tasks from user demonstrations, past experiences, and vocal
+              comments,” IEEE Transactions on Systems, Man, and Cybernetics, Part
+              B (Cybernetics), vol. 37, no. 2, pp. 322–332, 2007.  
+            </p>
+            <p class="mb-0">
+              [15] A. Saran, K. Desai, M. L. Chang, R. Lioutikov, A. Thomaz, and
+              S. Niekum, “Understanding acoustic patterns of human teachers demonstrating manipulation tasks to robots,” in 2022 IEEE/RSJ International
+              Conference on Intelligent Robots and Systems (IROS). IEEE, 2022.  
+            </p>
+            <p class="mb-0">
+              [16] A. Lockerd and C. Breazeal, “Tutelage and socially guided robot
+              learning,” in 2004 IEEE/RSJ International Conference on Intelligent
+              Robots and Systems (IROS), vol. 4. IEEE, 2004, pp. 3475–3480.  
+            </p>
+            <p class="mb-0">
+              [17] J. Lin, Z. Ma, R. Gomez, K. Nakamura, B. He, and G. Li, “A review on
+              interactive reinforcement learning from human social feedback,” IEEE
+              Access, vol. 8, pp. 120 757–120 765, 2020.  
+            </p>
+            <p class="mb-0">
+              [18] T. A. K. Faulkner, E. S. Short, and A. L. Thomaz, “Interactive reinforcement learning with inaccurate feedback,” in 2020 IEEE International
+              Conference on Robotics and Automation (ICRA). IEEE, 2020, pp.
+              7498–7504.   
+            </p>
+            <p class="mb-0">
+              [19] R. Zhang, F. Torabi, G. Warnell, and P. Stone, “Recent advances
+              in leveraging human guidance for sequential decision-making tasks,”
+              Autonomous Agents and Multi-Agent Systems, vol. 35, no. 2, pp. 1–39,
+              2021.  
+            </p>
+            <p class="mb-0">
+              [20] G. Li, R. Gomez, K. Nakamura, and B. He, “Human-centered reinforcement learning: A survey,” IEEE Transactions on Human-Machine
+              Systems, vol. 49, no. 4, pp. 337–349, 2019. 
+            </p>
+            <p class="mb-0">
+              [21] A. Saran, S. Majumdar, E. S. Short, A. Thomaz, and S. Niekum,
+              “Human gaze following for human-robot interaction,” in 2018 IEEE/RSJ
+              International Conference on Intelligent Robots and Systems (IROS).
+              IEEE, 2018, pp. 8615–8621. 
+            </p>
+          </div>
+          <div class="col-12 col-lg-6" id="exp">
+            <p class="mb-0">
+              [22] A. Saran, R. Zhang, E. S. Short, and S. Niekum, “Efficiently guiding
+              imitation learning agents with human gaze,” International Conference
+              on Autonomous Agents and Multiagent Systems, 2021.
+            </p>
+            <p class="mb-0">
+              [23] A. Saran, E. S. Short, A. Thomaz, and S. Niekum, “Understanding
+              teacher gaze patterns for robot learning,” in Conference on Robot
+              Learning. PMLR, 2020, pp. 1247–1258.  
+            </p>
+            <p class="mb-0">
+              [24] R. Zhang, A. Saran, B. Liu, Y. Zhu, S. Guo, S. Niekum, D. Ballard, and
+              M. Hayhoe, “Human gaze assisted artificial intelligence: A review,” in
+              IJCAI: Proceedings of the Conference, vol. 2020. NIH Public Access,
+              2020, p. 4951. 
+            </p>
+            <p class="mb-0">
+              [25] Y. Cui, Q. Zhang, A. Allievi, P. Stone, S. Niekum, and W. B. Knox, “The
+              empathic framework for task learning from implicit human feedback,”
+              arXiv preprint arXiv:2009.13649, 2020. 
+            </p>
+            <p class="mb-0">
+              [26] J. Lin, Q. Zhang, R. Gomez, K. Nakamura, B. He, and G. Li, “Human
+              social feedback for efficient interactive reinforcement agent learning,” 
+              in 2020 29th IEEE International Conference on Robot and Human
+              Interactive Communication (RO-MAN). IEEE, 2020, pp. 706–712.
+            </p>
+            <p class="mb-0">
+              [27] F. G. Visi and A. Tanaka, “Towards assisted interactive machine learning:
+              exploring gesture-sound mappings using reinforcement learning,” in
+              ICLI 2020—the fifth international conference on live interfaces, 2020,
+              pp. 9–11.  
+            </p>
+            <p class="mb-0">
+              [28] F. Cruz, G. I. Parisi, and S. Wermter, “Multi-modal feedback for
+              affordance-driven interactive reinforcement learning,” in 2018 International Joint Conference on Neural Networks (IJCNN). IEEE, 2018, pp.
+              1–8.  
+            </p>
+            <p class="mb-0">
+              [29] Z.-Y. Chen, Y.-J. Li, M. Wang, F. Steinicke, and Q. Zhao, “A reinforcement learning approach to redirected walking with passive haptic
+              feedback,” in 2021 IEEE International Symposium on Mixed and Augmented Reality (ISMAR). IEEE, 2021, pp. 184–192.  
+            </p>
+            <p class="mb-0">
+              [30] K. Zhang, M. Sharma, M. Veloso, and O. Kroemer, “Leveraging multimodal haptic sensory data for robust cutting,” in 2019 IEEE-RAS 19th
+              International Conference on Humanoid Robots (Humanoids). IEEE,
+              2019, pp. 409–416. 
+            </p>
+            <p class="mb-0">
+              [31] D. Gandhi, A. Gupta, and L. Pinto, “Swoosh! rattle! thump!-actions that
+              sound,” 2019.  
+            </p>
+            <p class="mb-0">
+              [32] V. Dean, S. Tulsiani, and A. Gupta, “See, hear, explore: Curiosity via
+              audio-visual association,” arXiv preprint arXiv:2007.03669, 2020. 
+            </p>
+            <p class="mb-0">
+              [33] Y. Aytar, T. Pfaff, D. Budden, T. L. Paine, Z. Wang, and N. de Freitas,
+              “Playing hard exploration games by watching youtube,” arXiv preprint
+              arXiv:1805.11592, 2018.  
+            </p>
+            <p class="mb-0">
+              [34] T. Tran, S. Toshniwal, M. Bansal, K. Gimpel, K. Livescu, and M. Ostendorf, “Parsing speech: a neural approach to integrating lexical and
+              acoustic-prosodic information,” arXiv preprint arXiv:1704.07287, 2017  
+            </p>
+            <p class="mb-0">
+              [35] J. Hirschberg, D. Litman, and M. Swerts, “Prosodic and other cues to
+              speech recognition failures,” Speech communication, vol. 43, no. 1–2,
+              pp. 155–175, 2004.  
+            </p>
+            <p class="mb-0">
+              [36] E. S. Short, M. L. Chang, and A. Thomaz, “Detecting contingency for
+              hri in open-world environments,” in Proceedings of the 2018 ACM/IEEE
+              International Conference on Human-Robot Interaction, 2018, pp. 425–
+              433.  
+            </p>
+            <p class="mb-0">
+              [37] D. Yu and L. Deng, AUTOMATIC SPEECH RECOGNITION. Springer,
+              2016.  
+            </p>
+            <p class="mb-0">
+              [38] Google, “Google Cloud Speech-to-Tex,”
+              https://cloud.google.com/speech-to-text, 2021. 
+            </p>
+            <p class="mb-0">
+              [39] B. McFee, A. Metsai, M. McVicar, S. Balke, C. Thome, C. Raffel, ´
+              F. Zalkow, A. Malek, Dana, K. Lee, O. Nieto, D. Ellis, J. Mason,
+              E. Battenberg, S. Seyfarth, R. Yamamoto, viktorandreevichmorozov,
+              K. Choi, J. Moore, R. Bittner, S. Hidaka, Z. Wei, nullmightybofo,
+              A. Weiss, D. Heren˜u, F.-R. St ´ oter, L. Nickel, P. Friesch, M. Vollrath, ¨
+              and T. Kim, “librosa/librosa: 0.9.2,” Jun. 2022. [Online]. Available:
+              https://doi.org/10.5281/zenodo.6759664  
+            </p>
+            <p class="mb-0">
+              [40] J. W. Kim, J. Salamon, P. Li, and J. P. Bello, “Crepe: A convolutional
+              representation for pitch estimation,” in 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE,
+              2018, pp. 161–165. 
+            </p>
+            <p class="mb-0">
+              [41] C. P. Dancey and J. Reidy, Statistics without maths for psychology.
+              Pearson education, 2007.  
+            </p>
           </div>
         </div>
       </div>
@@ -399,8 +723,7 @@
             <p>
               <i class="bi bi-envelope"></i>
               <a href="mailto: maydogan17@ku.edu.tr" target="_blank"
-                >maydogan17@ku.edu.tr</a
-              >
+                >maydogan17@ku.edu.tr</a>
             </p>
           </div>
           <div class="col-lg-3 col-12 text-center">
