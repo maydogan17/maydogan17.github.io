@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Murat Han Aydoğan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Murat Han Aydoğan Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="A portfolio website to showcase my resume and projects."
+    />
+    <meta property="og:image" content="imgs/thumbnail.jpg" />
+    <meta property="og:url" content="https://maydogan17.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand sticky-bottom" id="home">
+        <div class="container-fluid py-3">
+          <a class="navbar-brand" href="#home"
+            ><i class="bi bi-code h-100"></i
+          ></a>
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a
+              class="nav-link"
+              href="https://github.com/maydogan17"
+              target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a
+              class="nav-link"
+              href="https://www.linkedin.com/in/maydogan17/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </header>
+      <div class="container mt-lg-5 mb-lg-5 pb-lg-5 pt-lg-5" id="title">
+        <div class="row mt-5 pt-5">
+          <div class="col-12 mb-2 pb-5">
+            <h4 class="display-6">Livability Index of Turkish Provinces</h4>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid pt-4 pb-4" id="project_title">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2 class="display-6 mb-0">Project</h2>
+            </div>
+            <div class="col-2 offset-md-1">
+                <a href="https://github.com/maydogan17/livability-index-turkey" target="_blank" class="btn btn-dark" role="button">Github Repository</a>
+            </div>
+            <div class="col-3">
+                <a href="https://drive.google.com/file/d/1m3ScJGyevVsVLCAeabidKT7R6nFcBQ7b/view?usp=sharing" target="_blank" class="btn btn-dark" role="button">Download Project Report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 mb-5 pt-5 pb-5" id="project_content">
+        <div class="row">
+          <div class="col-12 col-lg-12">
+            <h2 class="display-6 pb-3">Objective</h2>
+            <br>
+            <p class="mb-0">
+                The main objective of this project is to create a reliable and thorough 
+                livability index for Turkey's provinces. Recognizing that the quality of life in a 
+                region isn't determined by a singular facet, a holistic strategy was incorporated. 
+                This index is created by compiling and examining data from five crucial areas: culture, 
+                education, health care, economy, and risk of natural disasters. The rationale behind such 
+                a project is twofold:    
+            </p>
+            <br>
+            <p class="mb-0"><b>Informed Decision-Making: </b>Potential residents, companies, or 
+                legislators can use this index as a reference to help them make decisions based on 
+                measured and objective livability criteria.
+            </p>
+            <br>
+            <p class="mb-0"><b>Policy Guidance: </b>This project seeks to influence regional policy 
+                by highlighting the positive and negative aspects of each province to focus attention
+                 and resources where they will have the greatest positive effects on quality of life.
+            </p>
+            <br>
+            <p class="mb-0">To ensure credibility and relevance, data essential to this project 
+                was meticulously sourced from the Turkish Statistical Institute (TÜİK), İŞKUR, and AFAD.
+            </p>
+            <br>
+            <h2 class="display-6 pb-3">How is the Livability Index Calculated?</h2>
+            <br>
+            <p class="mb-0">Each province's livability index is calculated using a consistent methodology that combines weights, scores, and normalization processes. This guarantees that each factor considered important for determining livability is accurately reflected. An explanation of the process is provided below:
+            </p>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Category Weighting</h5>
+            <p class="mb-0">Distinct domains such as Culture, Education, Healthcare, 
+                Economy, and Natural Disaster Risk are attributed weights. These weights highlight
+                 the significance that each domain has in deciding overall livability. The distribution 
+                 looks like this:</p>
+            <ul>
+                <li>Culture: 2
+                </li>
+                <li>Education: 2
+                </li>
+                <li>Healthcare: 2
+                </li>
+                <li>Economy: 2
+                </li>
+                <li>Natural Disaster Risk: 2
+                </li>
+            </ul>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Metric Scoring</h5>
+            <p class="mb-0">Every domain houses specific metrics, each of which is scaled by its performance:</p>
+            <ul>
+                <li>Metrics under Culture, Education, and Healthcare are scored from 1 (representing the lowest performance) to 10 (demonstrating outstanding performance).
+                </li>
+                <li>The Economy domain's Unemployment Rate uses an inverse scoring, where 1 corresponds to the lowest unemployment rate and 10 signifies the highest. This value negatively affects the final score.
+                </li>
+                <li>Metrics under Natural Disaster Risk, such as Earthquake, Flood, and Landslide/Rock Fall Risks, span between 1 (signifying a minimal risk) and 10 (indicating a high risk). However, these are negatively impacting the final score.</li>
+            </ul>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Aggregation & Normalization</h5>
+            <p class="mb-0">
+                Within each domain, scores from the respective metrics are aggregated to provide a consolidated
+                 view. This aggregate score is then standardized, set within a range of 1 (lowest performance)
+                  to 100 (best performance), ensuring consistency and facilitating comparisons.</p>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Final Livability Index Calculation
+            </h5>
+            <p class="mb-0">
+                The combined scores from each domain are multiplied by their assigned weights to arrive at 
+                the final result. The resulting values are then added together. The value of Natural Disaster 
+                Risk is deducted from the final score to account for its negative impact. The result of these
+                 processes provides the final livability index, which ranges from 0 (least desirable living 
+                 conditions) to 100 (perfect living conditions).
+            </p>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Category 1: Culture (weight 20% of total)
+            </h5>
+            <div class="text-center">
+                <img src="imgs/culture_table.png" class="rounded" style="width: 30rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Category 2: Education (weight 20% of total)
+            </h5>
+            <div class="text-center">
+                <img src="imgs/edu_table.png" class="rounded" style="width: 30rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Category 3: Healthcare (weight 20% of total)
+            </h5>
+            <div class="text-center">
+                <img src="imgs/health_table.png" class="rounded" style="width: 30rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Category 4: Economy (weight 20% of total)
+            </h5>
+            <div class="text-center">
+                <img src="imgs/econ_table.png" class="rounded" style="width: 30rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Category 5: Natural Disaster Risk (weight 20% of total)
+            </h5>
+            <p class="mb-0">The final score in this metric negatively affects the livability index.
+            </p>
+            <div class="text-center">
+                <img src="imgs/natdis_table.png" class="rounded" style="width: 30rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <h2 class="display-6 pb-3">Methodology</h2>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Data Collection and Pre-processing
+            </h5>
+            <b>Data Source</b>
+            <p class="mb-0">Metrics for the study were carefully selected from domains including 
+                Culture, Education, Healthcare, Economy, and Natural Disaster Risk. The primary 
+                repository for this data was the esteemed Turkish Statistical Institute (TÜİK), 
+                coupled with information from İŞKUR and AFAD. Such choice of sources was essential 
+                to guarantee the data's credibility and pertinence to the study's objectives.
+            </p>
+            <br>
+            <b>Data Import 
+            </b>
+            <p class="mb-0">The Jupyter Notebook environment was chosen as the primary workspace for 
+                its versatility and interactivity. Within this environment, the Python library, pandas, 
+                played a pivotal role in importing and managing the datasets.
+            </p>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Data Cleaning and Transformation
+            </h5>
+            <b>Data Structuring
+            </b>
+            <p class="mb-0">A series of data-wrangling processes were undertaken using pandas.
+                 This encompassed transforming the raw datasets, addressing any inconsistencies
+                 or missing values, and segmenting the data into specialized data frames. These 
+                 frames were designed to streamline and optimize the subsequent stages of analysis.
+            </p>
+            <br>
+            <b>Numerical Data Handling</b>
+            <p class="mb-0">The numpy library, known for its capability to efficiently manage vast 
+                arrays and matrices, was utilized. It expedited several computational tasks, especially 
+                when dealing with large-scale numerical transformations.
+            </p>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Data Visualization and Geographic Representation
+            </h5>
+            <b>Data Plotting
+            </b>
+            <p class="mb-0">The matplotlib library was employed to design and execute a variety of
+                 visualizations. These graphics, including bar charts, were instrumental in providing 
+                 a clear comparative view of the livability indices across different regions.
+            </p>
+            <br>
+            <b>Geospatial Mapping
+            </b>
+            <p class="mb-0">
+                A crucial element of this study was to understand the geographical distribution of the 
+                livability scores. This was achieved using geopandas, which facilitated the creation of 
+                an intuitive heat map. The map effectively showcased the spatial variability in the 
+                livability index, allowing for a deeper appreciation of regional disparities and patterns
+                 across Turkey.
+            </p>
+            <br>
+            <h2 class="display-6 pb-3">Results</h2>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Top 10 positions for 2021
+            </h5>
+            <div class="text-center">
+                <img src="imgs/top10.png" class="rounded" style="width: 40rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <p class="mb-0">
+                In 2021, Edirne reigned supreme, marking its position as the greatest level of livability 
+                in Turkey with an unparalleled index of 82.85. Delving into the individual metrics, Edirne's 
+                cultural vibrancy is undeniably eminent, boasting an impeccable score of 99.85. Its commendable
+                 performance in Education and an impeccable Healthcare rating further accentuate its dominance
+                  in the rankings.
+            </p>
+            <br>
+            <p class="mb-0">
+                In its wake, Ankara and Denizli clinch the second and third positions. While Nevşehir, 
+                standing ninth in the overall rankings, astonishes with its stellar Education score of 
+                92.84, İstanbul, despite its overall prestige, encounters challenges in the same sector. 
+                The poor state of education in Istanbul may be due to overpopulation.
+            </p>
+            <br>
+            <p class="mb-0">
+                The arena of Healthcare showcases Edirne as the undisputed leader. However, in 
+                the realm of Natural Disasters, Kırklareli emerges as the safest bet with its minimal
+                 risk score of -1. On the economic front, the dynamism of İstanbul is palpable with 
+                 its staggering score of 98.08, underscoring its status as Turkey's economic nucleus.    
+            </p>
+            <br>
+            <p class="mb-0">
+                In conclusion, Edirne represents the highest level of livability in Turkey for 2021, 
+                but the canvas of top-performing provinces portrays a mosaic of unique strengths and 
+                locations ready for growth, representing the broad spectrum of living throughout Turkey.
+            </p>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Bottom 10 positions for 2021
+            </h5>
+            <div class="text-center">
+                <img src="imgs/bot10.png" class="rounded" style="width: 40rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <p class="mb-0">
+                Kahramanmaraş finds itself marginally ahead of its counterparts at the 
+                tail end, securing the 72nd rank with an index of 17.15. Its metrics hint at 
+                challenges particularly in Culture and Education, though it exhibits a relatively 
+                robust stance in the Economy with a score of 55.05. However, it's heavily affected 
+                by its susceptibility to Natural Disasters, as indicated by its -55.45 score.
+            </p>
+            <br>
+            <p class="mb-0">
+                Shadowing Kahramanmaraş, Bitlis, and Şanlıurfa are seated at ranks 73 and 74, 
+                respectively. Remarkably, Bingöl, despite its overall 75th position, showcases 
+                potential with a noteworthy score of 47.88 in Education. In stark contrast, Şanlıurfa 
+                grapples with an almost negligible score in the same domain, hinting at significant 
+                educational challenges.
+            </p>
+            <br>
+            <p class="mb-0">
+                The Healthcare facet is particularly grim for Ağrı and Şırnak, both scoring miserably 
+                low. On the Natural Disasters front, Bingöl stands out on the front of natural disasters 
+                with a frightening risk score of -80.2, indicating a higher vulnerability to disasters.
+            </p>
+            <br>
+            <p class="mb-0">
+                Drawing the curtain, Hakkari and Şırnak hold the unfortunate distinction of 
+                occupying the 80th and 81st positions, with indices of 1.98 and an alarming zero, 
+                respectively. Their struggles span across multiple domains, emphasizing the need 
+                for substantial interventions to uplift these provinces.
+
+            </p>
+            <br>
+            <p class="mb-0">
+                In summation, while the bottom 10 provinces each present a unique tapestry of 
+                challenges and minor successes, there's an unmistakable call for amplified efforts 
+                and strategic interventions to bolster their livability and enhance the well-being 
+                of their inhabitants.
+            </p>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Regions 2021
+            </h5>
+            <div class="text-center">
+                <img src="imgs/regions.png" class="rounded" style="width: 40rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/regions_table_2021.png" class="rounded" style="width: 40rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <p class="mb-0">
+                In the 2021 livability assessment, Marmara emerged preeminent with an index of 
+                46.7, predominantly fueled by its economic vitality at 78.88. Trailing closely, 
+                Aegean exhibited cultural prowess with a score of 61.66, though its -47.41 in 
+                Natural Disasters demands strategic mitigation. Central Anatolia, at 44.27, 
+                distinguished itself through an emphasis on Healthcare, notching a score of 
+                45.21. The Black Sea region, with an index of 40.15, resonates as an educational 
+                hub with the highest average score in the Education metric. However, its economic
+                 metric of 51.66 suggests potential growth areas. Meanwhile, the Mediterranean region, 
+                 registering 33.28, demonstrated consistent performance but with noticeable natural 
+                 disaster risks. Notably, Southeastern Anatolia underscored urgent developmental needs, 
+                 languishing with an index of 21.81, particularly concerning the Education sector at 15.27.
+            </p>
+            <br>
+            <p class="mb-0">
+                Conclusively, while regions like Marmara exemplify high livability standards, 
+                areas such as Southeastern Anatolia illuminate critical focal points for strategic 
+                interventions.
+            </p>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Regions compared to last year
+            </h5>
+            <div class="text-center">
+                <img src="imgs/regions_compared.png" class="rounded" style="width: 40rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <p class="mb-0">
+                Southeastern Anatolia has observed a downward trend in its livability, transitioning from 23.05 in 2020 to 21.81 in 2021. Even if it is only slight, this decline illustrates the region's ongoing problems.
+            </p>
+            <br>
+            <p class="mb-0">
+                Eastern Anatolia, too, witnessed a decrease in its index, moving from 26.04 in 2020 to 23.08 in 2021, emphasizing the need for targeted developmental strategies in this area. 
+            </p>
+            <br>
+            <p class="mb-0">
+                Mediterranean region's score exhibited a slight upward shift from 33.01 in 2020 to 33.28 in 2021, indicating potential enhancements in specific livability sectors or stabilization of previous challenges.
+            </p>
+            <br>
+            <p class="mb-0">
+                The Black Sea region, however, experienced a reduction in its index from 43.17 in 2020 to 40.15 in 2021, highlighting emerging issues or the intensification of existing concerns.
+            </p>
+            <br>
+            <p class="mb-0">
+                Central Anatolia demonstrated a decrement, although minor, moving from 46.18 in 2020 to 44.27 in 2021 losing its second place last year to the Aegean region. Despite the dip, it remains a region of high livability, necessitating a closer examination of the factors influencing the change.  
+            </p>
+            <br>
+            <p class="mb-0">
+                Conversely, the Aegean region charted a positive trajectory, elevating from 42.49 in 2020 to 44.41 in 2021. This upswing suggests effective measures or developments that have augmented its livability.
+            </p>
+            <br>
+            <p class="mb-0">
+                Lastly, the Marmara region, though retaining its premier position, manifested a mild decline from 48.28 in 2020 to 46.70 in 2021. This slight shift emphasizes the need for continued vigilance to sustain its top-tier status.
+            </p>
+            <br>
+            <p class="mb-0">
+                In summation, the 2020-2021 period brought forth varied trends in livability across Turkey's regions. While areas like the Aegean and Mediterranean showed positive developments, regions such as Southeastern Anatolia and the Black Sea signaled areas of concern. These insights are instrumental for policymakers to strategize region-specific interventions.
+            </p>
+            <br>
+            <h5 class="display-6 pb-3" style="font-size: 1.75rem;">Livability Index Heatmap 2021
+            </h5>
+            <div class="text-center">
+                <img src="imgs/tur_heatmap.png" class="rounded" style="width: 100%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <p class="mb-0">
+                This heatmap provides a visual representation of the livability scores across different 
+                regions of Turkey for the year 2021. Green shades indicate higher livability scores, 
+                denoting regions with better performances across key metrics. Conversely, red shades 
+                signal areas with potential for improvement. A closer inspection of the map reveals 
+                both regional patterns and unique challenges, guiding insights into areas of focus for 
+                holistic development. Once more, we can see that the region of Southeastern Anatolia is 
+                depicted in shades of red, which denotes a lower index value.
+            </p>
+            <br>
+            <h2 class="display-6 pb-3">Conclusion</h2>
+            <p class="mb-0">
+                The Livability Index of Turkish Provinces project has been more than just a study of the 
+                quality of life across regions; it has been a transformative journey in data science. 
+                Tackling diverse domains from Culture to Natural Disasters and translating them into 
+                quantifiable metrics illuminated the rich tapestry of life in Turkey, while simultaneously 
+                emphasizing the nuances and intricacies of data analysis.
+            </p>
+            <br>
+            <p class="mb-0">
+                <b>Data Integration:</b> Sourcing and amalgamating data from institutions like TÜİK, İŞKUR, and 
+                AFAD honed my skills in handling varied datasets, emphasizing the importance of credible 
+                sources for robust outcomes.
+            </p>
+            <br>
+            <p class="mb-0">
+                <b>Analytical Depth:</b> By delving into individual metrics, from the prosperity of Edirne to 
+                the challenges in Şırnak, I cultivated a deeper understanding of multifaceted data analysis, 
+                balancing breadth with depth.
+            </p>
+            <br>
+            <p class="mb-0">
+                <b>Technical Enhancement:</b> Using tools like geopandas for heatmap visualizations and pandas 
+                for data wrangling refined my technical proficiencies, ensuring they remained at the 
+                industry's cutting edge.
+            </p>
+            <br>
+            <p class="mb-0">
+                <b>Strategic Insight:</b> Translating raw numbers into strategic insights, particularly for 
+                policymakers, honed my ability to think beyond data, appreciating its real-world implications.
+            </p>
+            <br>
+            <p class="mb-0">
+                The project underscored the responsibility a data scientist holds: to not just 
+                interpret data but to tell its story. Every province and every region had a narrative, 
+                and the ability to capture that narrative quantitatively was both a challenge and a reward.
+            </p>
+            <br>
+            <p class="mb-0">
+                As I reflect on the journey, the Livability Index Project emerges not just as an 
+                academic or professional endeavor but as a significant milestone in my growth as a 
+                data scientist. It reinforced the fact that data science isn't just about numbers; 
+                it's about understanding, interpreting, and influencing the world around us.
+            </p>
+            <br>
+            <h2 class="display-6 pb-3">Appendix</h2>
+            <br>
+            <div class="text-center">
+                <img src="imgs/livability2021.jpg" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/culture_map.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/edu_map.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/health_map.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/econ_map.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/nat_map.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/2020_map.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/2019_map.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/2018_map.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/2017_map.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="imgs/app_1.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+      type="button"
+      class="btn btn-secondary btn-floating text-center"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <footer class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12 text-center">
+            <p>
+              <i class="bi bi-envelope"></i>
+              <a href="mailto: maydogan17@ku.edu.tr" target="_blank"
+                >maydogan17@ku.edu.tr</a>
+            </p>
+          </div>
+          <div class="col-lg-3 col-12 text-center">
+            <p><i class="bi bi-telephone"></i> +90 505 260 64 17</p>
+          </div>
+          <div class="col-lg-3 col-12 text-center">
+            <address>Yenimahalle, Ankara, Türkiye</address>
+          </div>
+          <div class="col-lg-3 col-12 text-center">
+            <a href="https://twitter.com/murathanaydgn" target="_blank"
+              ><i class="bi bi-twitter"></i> @murathanaydgn</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
