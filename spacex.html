@@ -51,7 +51,7 @@
       <div class="container mt-lg-5 mb-lg-5 pb-lg-5 pt-lg-5" id="title">
         <div class="row mt-5 pt-5">
           <div class="col-12 mb-2 pb-5">
-            <h4 class="display-6">SpaceX  Falcon 9 First Stage Landing Prediction and Analysis</h4>
+            <h4 class="display-6">SpaceX Falcon 9 First Stage Landing Prediction and Analysis 🚀</h4>
             <br>
           </div>
         </div>
@@ -75,43 +75,89 @@
               Executive Summary</h2>
             <br>
             <p class="mb-0">
-                <ul>
+                 <b>
+                    Background & Objective:
+                 </b>
+                 <ul>
                     <li>
-                        <b>Background: </b>SpaceX is recognized for its vision of frequent space travel and Mars colonization, leveraging the Falcon 9 rocket with a reusable first stage.
+                        Utilized Falcon 9 launch data from SpaceX to predict the success of its first stage landing.
                     </li>
                     <li>
-                        <b>Objective: </b>The main thrust of the analysis was predicting the Falcon 9 first stage's successful landing, a pivotal factor in cost-saving and enhancing space mission frequency.
+                        A successful landing signifies cost-saving and facilitates frequent space missions.
+                    </li>
+                 </ul>
+                 <b>
+                    Technologies Employed:
+                 </b>
+                 <ul>
+                    <li>
+                        Comprehensive toolkit including Python, Pandas, Scikit-Learn, Plotly, Dash, and PostgreSQL.
                     </li>
                     <li>
-                        <b>Data Source: </b>Data was extracted from the SpaceX API, encompassing details like rocket type, launch site, payload specifics, and landing outcomes.
+                        Data sourced from SpaceX API and visualized using Plotly for interactive insights.
+                    </li>
+                 </ul>
+                 <b>
+                    Methodological Approach:
+                 </b>
+                 <ul>
+                    <li>
+                        Data underwent preprocessing, cleaning, and feature engineering.
                     </li>
                     <li>
-                        <b>Data Handling: </b>The data underwent cleaning, missing value treatment, and feature transformation for analytical readiness.
+                        Trained multiple machine learning models, including Logistic Regression, Decision Trees, Logistic Regression, and SVM.
+                    </li>
+                 </ul>
+                 <b>
+                    Key Insights from EDA:
+                 </b>
+                 <ul>
+                    <li>
+                        Flight Number positively correlates with Landing Success.
                     </li>
                     <li>
-                        <b>Insights from EDA:</b>
-                        <ul>
-                            <li>
-                                A clear correlation was identified between Flight Number and increased Landing Success. Meaning SpaceX increased their success of landing the first stage rocket over the years.
-                            </li>
-                            <li>
-                                Heavy payloads seemed to have a higher likelihood of successful landing.
-                            </li>
-                            <li>
-                                Post-2013, there's an evident trend of increased launch success rate.
-                            </li>
-                            <li>
-                                Following orbit targets have the highest success rate of first stage rocket landing: ES-L1, GEO, HEO, and SSO.
-                            </li>
-                        </ul>
+                        Heavy payloads yield higher chances of successful landings.
                     </li>
                     <li>
-                        <b>Machine Learning Analysis: </b>Multiple models, including Logistic Regression, SVM, Decision Tree, and KNN, were deployed. The Decision Tree surfaced as the most accurate model.
+                        Launch success rate has seen an upward trend since 2013.
+                    </li>
+                 </ul>
+                 <b>
+                    Plotly Dashboard:
+                 </b>
+                 <ul>
+                    <li>
+                        Interactive dashboard built with Plotly and Dash.
                     </li>
                     <li>
-                        <b>Key Findings: </b>Launch site, the age of the booster (Flight Number), and payload mass emerged as influential factors in landing success.
+                        Featured a launch site dropdown for success rates and a payload mass slider for detailed visual insights.
                     </li>
-                </ul>
+                 </ul>
+                 <b>
+                    Machine Learning Outcomes:
+                 </b>
+                 <ul>
+                    <li>
+                        Decision Tree emerged as the top-performing model.
+                    </li>
+                    <li>
+                        Model evaluation showcased high accuracy, although external factors must be considered.
+                    </li>
+                 </ul>
+                 <b>
+                    Conclusion:
+                 </b>
+                 <ul>
+                    <li>
+                        The Decision Tree model is recommended for future predictions.
+                    </li>
+                    <li>
+                        Emphasized continuous data collection and model refinement for sustaining accuracy.
+                    </li>
+                    <li>
+                        The analysis underscores Falcon 9's first stage landing reliability, a pivotal step for SpaceX's vision.
+                    </li>
+                 </ul>
             </p>
             <br>
             <h2 class="display-6 pb-3">Technologies Used</h2>
@@ -155,6 +201,7 @@
                     <b>Jupyter Notebook: </b>An open-source web application that was used to create and share documents containing live code, equations, visualizations, and narrative text.
                 </li>
             </ul>
+            These technologies, together, facilitated an end-to-end solution, from data extraction to interactive visualizations, ensuring a comprehensive analysis of Falcon 9's first stage landing predictions.
             </p>
             <br>
             <h2 class="display-6 pb-3">Objective</h2>
@@ -303,6 +350,69 @@
                     </li>
                 </ul>
             </p>
+            <br>
+            <h2 class="display-6 pb-3">Plotly Dashboard</h2>
+            <br>
+            <p class="mb-0">
+                The analysis also extended beyond static visualizations and models. A dynamic and interactive dashboard was created using Plotly and Dash, providing a user-friendly interface for stakeholders to explore the data and gain insights.
+            </p>
+            <br>
+            <p class="mb-0">
+                <b>Features of the Dashboard:</b>
+                <ol>
+                    <li>
+                        <b>Dropdown List for Launch Sites:</b>
+                        <ul>
+                            <li>
+                                Users can select a specific launch site from a dropdown menu.
+                            </li>
+                            <li>
+                                Upon selection, a pie chart is dynamically generated showcasing the success rate for the chosen launch site.
+                            </li>
+                            <li>
+                                This provides a clear visual representation of how each launch site performs in terms of successful landings.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Payload Mass Slider:</b>
+                        <ul>
+                            <li>
+                                A slider allows users to filter launches based on payload mass.
+                            </li>
+                            <li>
+                                As users adjust the slider, a scatter plot updates in real-time to display the success rate of launches with the selected payload mass range.
+                            </li>
+                            <li>
+                                Each point in the scatter plot is color-coded based on the launch site, offering insights into which launch sites handle different payload masses better.
+                            </li>
+                            <li>
+                                This interactive feature lets stakeholders discern patterns between payload mass and success rate, and how different launch sites perform within those parameters.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </p>
+            <p class="mb-0">
+                <b>Benefits of the Dashboard:</b>
+                <ul>
+                    <li>
+                        <b>Interactivity: </b>Users are not limited to static figures. They can interact with the dashboard to explore different facets of the data.
+                    </li>
+                    <li>
+                        <b>User-Friendly: </b>The intuitive design ensures even those without a technical background can navigate and extract meaningful insights.
+                    </li>
+                    <li>
+                        <b>Real-time Insights: </b>As the data updates with new launches, the dashboard can provide up-to-date analyses, ensuring stakeholders always have the latest information at their fingertips.
+                    </li>
+                </ul>
+            </p>
+            <br>
+            <p class="mb-0">Incorporating an interactive Plotly dashboard provides a holistic view of the data, making it easier for stakeholders to derive insights, make informed decisions, and understand the various factors influencing Falcon 9's first stage landing success.</p>
+            <br>
+            <div class="text-center">
+                <img src="imgs/plotly.png" class="rounded" style="width: 75%; text-align: center; display: block; margin-left: auto; margin-right: auto;">
+            </div>
             <br>
             <h2 class="display-6 pb-3">Conclusion</h2>
             <br>
