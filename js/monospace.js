@@ -118,3 +118,90 @@ function onDebugToggle() {
 }
 debugToggle.addEventListener("change", onDebugToggle);
 onDebugToggle();
+
+// Theme management
+function initTheme() {
+  const savedTheme = localStorage.getItem('monospace-theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  // Set initial theme
+  if (savedTheme) {
+    setTheme(savedTheme);
+  } else if (prefersDark) {
+    setTheme('dark');
+  } else {
+    setTheme('light');
+  }
+  
+  // Update active state
+  updateThemeSelector();
+}
+
+function setTheme(theme) {
+  const html = document.documentElement;
+  
+  // Remove existing theme classes
+  html.classList.remove('theme-light', 'theme-dark', 'theme-matrix');
+  
+  // Add new theme class
+  html.classList.add(`theme-${theme}`);
+  
+  // Save preference
+  localStorage.setItem('monospace-theme', theme);
+  
+  // Update UI
+  updateThemeSelector();
+  
+  // Trigger custom event
+  window.dispatchEvent(new CustomEvent('themechange', { detail: { theme } }));
+}
+
+function updateThemeSelector() {
+  const currentTheme = getCurrentTheme();
+  document.querySelectorAll('.theme-option').forEach(option => {
+    option.classList.toggle('active', option.dataset.theme === currentTheme);
+  });
+}
+
+function getCurrentTheme() {
+  const html = document.documentElement;
+  if (html.classList.contains('theme-light')) return 'light';
+  if (html.classList.contains('theme-dark')) return 'dark';
+  if (html.classList.contains('theme-matrix')) return 'matrix';
+  return 'light'; // fallback
+}
+
+function cycleTheme() {
+  const themes = ['light', 'dark', 'matrix'];
+  const current = getCurrentTheme();
+  const currentIndex = themes.indexOf(current);
+  const nextIndex = (currentIndex + 1) % themes.length;
+  setTheme(themes[nextIndex]);
+}
+
+// Initialize theme on page load
+document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
+  
+  // Add theme option click handlers
+  document.querySelectorAll('.theme-option').forEach(option => {
+    option.addEventListener('click', (e) => {
+      e.preventDefault();
+      setTheme(option.dataset.theme);
+    });
+  });
+  
+  // Add keyboard shortcut for theme cycling (T key)
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 't' || e.key === 'T') {
+      if (!e.ctrlKey && !e.metaKey && !e.altKey) {
+        // Only if not in an input field
+        if (document.activeElement.tagName !== 'INPUT' && 
+            document.activeElement.tagName !== 'TEXTAREA') {
+          e.preventDefault();
+          cycleTheme();
+        }
+      }
+    }
+  });
+});

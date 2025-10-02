@@ -34,6 +34,59 @@
   }
 }
 
+/* Theme overrides */
+.theme-light {
+  --text-color: #000;
+  --text-color-alt: #666;
+  --background-color: #fff;
+  --background-color-alt: #eee;
+}
+
+.theme-dark {
+  --text-color: #fff;
+  --text-color-alt: #aaa;
+  --background-color: #000;
+  --background-color-alt: #111;
+}
+
+.theme-matrix {
+  --text-color: #00ff00;
+  --text-color-alt: #008800;
+  --background-color: #000;
+  --background-color-alt: #001100;
+}
+
+/* Controls row for debug toggle and theme selector */
+.controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Theme selector styles */
+.theme-selector {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.theme-option {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--text-color-alt);
+  background: var(--background-color);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.theme-option:hover,
+.theme-option.active {
+  background: var(--text-color);
+  color: var(--background-color);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -464,4 +517,9 @@ label input {
 
 .debug-toggle-label {
   text-align: right;
+}
+
+/* Center pre elements */
+pre {
+  text-align: center;
 }
