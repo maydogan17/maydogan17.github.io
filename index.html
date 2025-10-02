@@ -2,358 +2,249 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Murat Han Aydoğan</title>
+    <title>murat han aydogan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="Murat Han Aydoğan Portfolio" />
+    <meta property="og:title" content="murat han aydogan portfolio" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
       content="A portfolio website to showcase my resume and projects."
     />
-    <meta property="og:image" content="imgs/thumbnail.png" />
+    <meta property="og:image" content="imgs/thmb.svg" />
     <meta property="og:url" content="https://maydogan17.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" type="image/png" href="imgs/thmb.png">
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/monospace.css" />
   </head>
   <body>
-    <header class="navbar navbar-expand sticky-bottom" id="home">
-      <div class="container-fluid py-3">
-        <a class="navbar-brand" href="#home"
-          ><i class="bi bi-code h-100"></i
-        ></a>
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          <a class="nav-link" href="#projects_header">
-            Projects
-          </a>
-          <a class="nav-link" href="#resume_header">Resume</a>
-          <a class="nav-link" href="other.html">Other</a>
-          <a
-            class="nav-link"
-            href="https://github.com/maydogan17"
-            target="_blank"
-            ><i class="bi bi-github"></i
-          ></a>
-          <a
-            class="nav-link"
-            href="https://www.linkedin.com/in/maydogan17/"
-            target="_blank"
-            ><i class="bi bi-linkedin"></i
-          ></a>
-        </div>
-      </div>
-    </header>
-    <div class="container mt-lg-5 mb-lg-5 pb-lg-5 pt-lg-5" id="greeting">
-      <div class="row mt-5 mb-5 pb-5 pt-5">
-        <div class="col-12 mb-5 pb-5">
-          <h1 class="display-1 mt-5">hello 👋🏻</h1>
-          <h1 class="display-1 mt-0">i'm murat han aydoğan</h1>
-          <h4 class="display-6 mt-5">i write code,</h4>
-          <h4 class="display-6">analyze data,</h4>
-          <h4 class="display-6">and do some other stuff.</h4>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid pt-4 pb-4" id="projects_header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="display-6 mb-0">Projects</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-5 mb-5 pt-5 pb-5" id="content">
-      <div class="row">
-        <div class="col-auto col-md-3">
-          <div class="card" style="width: 18rem;">
-            <br>
-            <img class="card-img-top" src="imgs/rover.png" style="width: 10rem; text-align: center; display: block;
-                                                                  margin-left: auto; margin-right: auto;">
-            <div class="card-body">
-              <h5 class="card-title">Implicit Robot Task Information from Prosody in
-                Human Verbal Feedback</h5>
-              <p class="card-text">This study explores the correlation between human speech patterns (prosody) and robot learning, finding that elements like pitch and energy in verbal feedback can enhance interactive reinforcement learning in robots.</p>
-              <a href="audiorl.html" class="btn btn-dark">Go to Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-auto col-md-3">
-          <div class="card" style="width: 18rem;">
-            <br>
-            <img class="card-img-top" src="imgs/map.png" style="width: 15rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
-            <br>
-            <div class="card-body">
-              <h5 class="card-title">Livability Index of Turkish Provinces</h5>
-              <p class="card-text">The Livability Index of Turkish Provinces project provides a comprehensive evaluation of
-                 the quality of life across Turkish provinces in 2021, using data from authoritative sources to assess key 
-                 areas such as culture, education, healthcare, economy, and natural disaster risks.</p>
-                 <br>
-              <a href="livability.html" class="btn btn-dark">Go to Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-auto col-md-3">
-          <div class="card" style="width: 18rem;">
-            <br>
-            <img class="card-img-top" src="imgs/spacexlogo.webp" style="width: 10rem; text-align: center; display: block;
-                                                                  margin-left: auto; margin-right: auto;">
-           <br>
-           <div class="card-body">
-              <h5 class="card-title">SpaceX Falcon 9 First Stage Landing Prediction and Analysis</h5>
-              <p class="card-text">Utilizing SpaceX's Falcon 9 data, machine learning models forecasted landing successes, 
-                and insights were displayed on an interactive Plotly dashboard, emphasizing space technology progress.
-              </p>
-              <br>
-              <a href="spacex.html" class="btn btn-dark">Go to Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-auto col-md-3">
-          <div class="card" style="width: 18rem;">
-            <br>
-            <img class="card-img-top rounded" src="imgs/koc.png" style="width: 10rem; text-align: center; display: block; margin-left: auto; margin-right: auto;">
-            <div class="card-body">
-              <h5 class="card-title">Universe: Virtual Representation of Campus Life
-                at Koç University</h5>
-              <p class="card-text">Universe is a Unity-based virtual campus platform for Koç University, enabling students, faculty, and alumni to experience campus life, attend events, and socialize online when physical gatherings aren't possible.</p>
-              <a href="universe.html" class="btn btn-dark">Go to Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid pt-4 pb-4" id="resume_header">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <h2 class="display-6 mb-0">Resume</h2>
-          </div>
-            <div class="col-3 offset-md-3">
-              <a href="https://drive.google.com/file/d/1_6GKVua--AXFkMzd8XwgFtqOik5nWc1d/view?usp=sharing" target="_blank" class="btn btn-dark" role="button">Download Resume</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-5 mb-5 pt-5 pb-5" id="content">
-      <div class="row">
-        <div class="col-12" id="exp">
-          <h2 class="display-6 pb-3">Experience</h2>
-          <h5>Software Engineer</h5>
-          <p class="mb-0">
-            <b>Aselsan</b>, Ankara, Türkiye
-          </p>
-          <p class="mb-1">Mar 2023 - Sep 2024</p>
-          <ul class="ps-4">
-            <li>
-              Developed command and control software for military vehicles using the .NET framework, adhering to strict defense industry standards for performance and security.            
-            </li>
-            <li>
-              Led key project components, including communication systems and module development, ensuring on-time delivery of functional software aligned with project specifications.            
-            </li>
-              <li>
-                Served as Scrum Master, facilitating Agile methodologies, conducting daily stand-ups, sprint planning, and retrospectives to enhance team collaboration, productivity, and continuous improvement.
-              </li>
-          </ul>
-          <h5>Data Science Intern</h5>
-          <p class="mb-0">
-            <b>Vrije Universiteit Amsterdam</b>, Amsterdam, the Netherlands
-          </p>
-          <p class="mb-1">July 2022 - December 2022</p>
-          <ul class="ps-4">
-            <li>
-              Developed a Wizard-of-Oz study setup to collect audio data from participants teaching
-              a reinforcement learning agent in a grid world where the agent was wizarded by another participant, hence simulating prosody-sensitive agent learning.
-            </li>
-            <li>
-              Analyzed prosodic features such as energy, pitch and loudness. Showed that they are statistically significantly
-              correlated with the advantage function, an underlying Markov
-              Decision Process feature used by RL algorithms.   
-            <li>
-              Acquired hands-on experience in the research process, including designing and implementing study protocols, collecting and analyzing data and presenting findings.
-            </li>
-          </ul>
+    <table class="header">
+      <tr>
+        <td colspan="2" rowspan="2" class="width-auto">
+          <h1 class="title">murat han aydogan</h1>
+          <span class="subtitle">software developer & data scientist</span>
+        </td>
+        <th>Location</th>
+        <td class="width-min">Freiburg, Germany</td>
+      </tr>
+      <tr>
+        <th>Updated</th>
+        <td class="width-min"><time style="white-space: pre;">2025-09</time></td>
+      </tr>
+      <tr>
+        <th class="width-min">Email</th>
+        <td class="width-auto"><a href="mailto:maydogan17@ku.edu.tr">maydogan17@ku.edu.tr</a></td>
+        <th class="width-min"><a href="https://github.com/maydogan17" target="_blank">GitHub</a></th>
+        <td><a href="https://www.linkedin.com/in/maydogan17/" target="_blank">LinkedIn</a></td>
+      </tr>
+    </table>
 
-          <h5>Research and Development Intern</h5>
-          <p class="mb-0"><b>ART Labs</b>, İstanbul, Türkiye</p>
-          <p class="mb-1">July 2021 - September 2021</p>
-          <ul class="ps-4">
-            <li>
-              Developed a Python application for texture transfer automatization using Machine Learning. Directly worked withR&D Team and presented findings.
-            </li>
-            <li>
-              Successfully executed research projects and developed prototypes for new products, utilizing a combination oftechnical skills, creativity, and critical thinking.
-            </li>
-            <li>
-              Collaborated with the marketing team to design, develop and implement AR-powered Instagram filters using Spark AR.
-            </li>
-          </ul>
+    <label class="debug-toggle-label"><input type="checkbox" class="debug-toggle" /> Debug mode</label>
 
-          <h5>Google Casual Game Development Bootcamp Student</h5>
-          <p class="mb-0"><b>Kodluyoruz</b>, İstanbul, Türkiye</p>
-          <p class="mb-1">April 2021 - July 2021</p>
-          <ul class="ps-4">
-            <li>
-              Worked with over 40+ people on developing a space shooter themed
-              mobile game.
-            </li>
-            <li>
-              Took extensive classes on C# programming, Unity, and game
-              development.
-            </li>
-          </ul>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+    </nav>
+    <h2 id="about">About</h2>
+    <p> Software Developer and Data Scientist. I hold dual degrees in Computer Engineering and Media & Visual Arts from Koç University and am currently pursuing a master’s in Computer Science at the University of Freiburg.
+    </p>
+    <hr>
 
-          <h5>Software Engineering Intern</h5>
-          <p class="mb-0"><b>Aselsan</b>, Ankara, Türkiye</p>
-          <p class="mb-1">June 2021 - August 2021</p>
-          <ul class="ps-4">
-            <li>
-              Developed a multi-purpose Windows application for DJI Drones, utilizing programming tools such as C#, UniversalWindows Platform, .Net Core, and DJI Windows SDK. Contributed to the design, testing, and implementation of theapplication, which was used to control and perform various tasks on the drones.
-            </li>
-            <li>
-              Successfully completed assigned projects within the set timeframe and to the required standards. Demonstrated strongproject management and time management skills, and was able to work as part of a team to deliver high-quality results.
-            </li>
-          </ul>
-        </div>
+    <h2 id="projects">Projects</h2>
 
-        <div class="col-12" id="edu">
-          <h2 class="display-6 pb-3">Education</h2>
-          <h5>Computer Engineering</h5>
-          <p class="mb-0">
-            <b>Koç University</b>, College of Engineering, İstanbul, Türkiye
-          </p>
-          <p class="mb-1">2017 - 2023</p>
-          <ul class="ps-4">
-            <li>GPA: 3.31/4.00</li>
-            <li>
-              Koç University Computer Engineering Best Senior Design Project
-              Award 2022
-            </li>
-            <li>Koç University Vehbi Koç Honor Award 2020 & 2021</li>
-            <li>Koç University Anatolian Scholarship</li>
-          </ul>
-
-          <h5>Media and Visual Arts</h5>
-          <p class="mb-0">
-            <b>Koç University</b>, College of Social Sciences and Humanities,
-            İstanbul, Türkiye
-          </p>
-          <p class="mb-1">2020 - 2023</p>
-          <ul class="ps-4">
-            <li>Double Major</li>
-            <li>Certificate and Track Program: Media and Management</li>
-          </ul>
-        </div>
-        <div class="row">
-          <h2 class="display-6 pb-3 pt-3">Skills</h2>
-          <div class="col-6">
-            <h5><i class="bi bi-translate"> </i> Languages</h5>
-            <ul class="ps-4">
-              <li>English</li>
-              <li>Turkish</li>
-            </ul>
-            <h5><i class="bi bi-braces-asterisk"></i> Back End</h5>
-            <ul class="ps-4">
-              <li>Python</li>
-              <li>.NET</li>
-              <li>C#</li>
-              <li>Java</li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <h5><i class="bi bi-graph-up"></i> Data Science</h5>
-            <ul class="ps-4">
-              <li>Python</li>
-              <li>SQL</li>
-              <li>NoSQL</li>
-              <li>Matplotlib</li>
-              <li>NumPy</li>
-              <li>Pandas</li>
-              <li>Scikit-learn</li>
-              <li>SciPy</li>
-              <li>TensorFlow</li>
-              <li>Plotly</li>
-              <li>Seaborn</li>
-              <li>Microsoft Excel</li>
-            </ul>
-          </div>
-        </div>
+    <section class="project">
+      <h3>AutoML Text Classification: Automated Hyperparameter Optimization and Large Language Model-Based Few-Shot Learning</h3>
+      <details>
+        <summary>Short summary</summary>
+        <p>Addresses the inefficiency of manual text classification model selection by implementing two automated solutions: Structured AutoML using Optuna framework for Combined Algorithm Selection and Hyperparameter Optimization (CASH) across diverse architectures, and LLM-based few-shot classification leveraging in-context learning capabilities without traditional training phases.</p>
+      </details>
+      <p><strong>Technologies:</strong> Python, Optuna, AutoML, Transformers, BERT, CNNs, FFNs, Large Language Models, Few-Shot Learning</p>
+      <div class="project-links">
+        <button onclick="window.location.href='autotext.html'">View Project</button>
       </div>
-    <div class="row">
-      <div class="col-12" id="cert">
-        <h2 class="display-6 pb-3">Certifications</h2>
-        <h5><a href="https://coursera.org/verify/professional-cert/2CA7URYJBG6N">IBM Data Science Professional Certificate</a></h5>
-        <p class="mb-0"><b>Relevant Skills: </b>Data Science, Machine Learning, Data Visualization, Data Analysis, Python, SQL</p>
-        <ul class="ps-4">
-          <li>
-            Acquired expertise in Data Science methodology, utilizing tools such as Python, SQL, and various data visualization techniques.
-          </li>
-          <li>
-            Completed hands-on labs, data analyses, and projects demonstrating proficiency in creating Machine Learning models.
-          </li>
-        </ul>
+    </section>
 
-        <h5><a href="https://www.credly.com/badges/192d8b68-a108-459f-af89-16ea748efb5d/linked_in_profile">ACM Agile Scrum Training</a></h5>
-        <p class="mb-0"><b>Relevant Skills: </b>Scrum, Agile, Scrum Master</p>
-        <ul class="ps-4">
-          <li>
-            Gained a comprehensive understanding of Agile methodologies, experienced Scrum practices, and developed strategies for organizational transformation and effective business implementation.
-          </li>
-          <li>
-            Appointed as the Scrum Master for the software development team, guiding Agile implementations and reinforcing expertise with the ACM Agile Scrum Training certification.
-          </li>
+    <section class="project">
+      <h3>LoRA Mensa Food Adaptation</h3>
+      <details>
+        <summary>Short summary</summary>
+        <p>Investigates adapting Stable Diffusion v1.5 to generate German university cafeteria (Mensa) food images using Low-Rank Adaptation (LoRA). Fine-tuned on just 50 authentic photos with inconsistent lighting and composition, demonstrating that LoRA can effectively learn specific visual styles from minimal data to generate coherent and stylistically accurate results.</p>
+      </details>
+      <p><strong>Technologies:</strong> Python, Stable Diffusion, LoRA, ComfyUI, FD, DINOv2, dgm-eval, Computer Vision, Generative AI</p>
+      <div class="project-links">
+        <button onclick="window.location.href='mensa-food.html'">View Project</button>
+      </div>
+    </section>
+
+    <section class="project">
+      <h3>Leveraging Prosody as an Informative Teaching Signal for Agent Learning: Exploratory Studies and Algorithmic Implications</h3>
+      <details>
+        <summary>Short summary</summary>
+        <p>This paper shows that prosody, such as intonation in speech, can complement explicit feedback to improve reinforcement learning, while also providing empirical evidence and design guidelines for prosody-sensitive algorithms to enhance human-agent interaction. Published at ICMI '24</p>
+      </details>
+      <p><strong>Technologies:</strong> Python, Machine Learning, Audio Processing, Reinforcement Learning</p>
+      <div class="project-links">
+        <button onclick="window.location.href='audiorl.html'">View Project</button>
+      </div>
+    </section>
+
+    <section class="project">
+      <h3>Universe: Virtual Campus Life at Koç University</h3>
+      <details>
+        <summary>Short summary</summary>
+        <p>Universe is a Unity-based virtual campus platform for Koç University, enabling students, faculty, and alumni to experience campus life, attend events, and socialize online when physical gatherings aren't possible.</p>
+      </details>
+      <p><strong>Technologies:</strong> Unity, C#, Virtual Reality, Game Development, 3D Modeling</p>
+      <div class="project-links">
+        <button onclick="window.location.href='universe.html'">View Project</button>
+      </div>
+    </section>
+    <hr>
+    
+    <h2 id="experience">Experience</h2>
+
+    <section class="resume-section">
+
+      <div class="experience-item">
+        <h4>Software Developer</h4>
+        <p><strong>Fraunhofer ISE</strong>, Freiburg, Germany</p>
+        <p class="date-range">Jun 2025 - Present</p>
+        <ul>
+          <li>Develop Python applications for energy optimization systems integrating bidirectional electric vehicles and solar panels, utilizing linear programming techniques to maximize energy efficiency and cost savings.</li>
+          <li>Design and implement Mixed Integer Linear Programming (MILP) solvers for complex energy management scenarios, with planned expansion to non-linear optimization algorithms for advanced energy systems.</li>
+          <li>Lead software development initiatives for renewable energy optimization solutions, ensuring robust and scalable code architecture for real-world energy grid applications.</li>
         </ul>
       </div>
-    </div>
-    </div>
-    <button
-      type="button"
-      class="btn btn-secondary btn-floating text-center"
-      id="btn-back-to-top"
-    >
-      <i class="bi bi-arrow-up"></i>
-    </button>
-    <footer class="pt-5 pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-12 text-center">
-            <p>
-              <i class="bi bi-envelope"></i>
-              <a href="mailto: maydogan17@ku.edu.tr" target="_blank"
-                >maydogan17@ku.edu.tr</a
-              >
-            </p>
-          </div>
-          <div class="col-lg-3 col-12 text-center">
-            <p><i class="bi bi-telephone"></i> +90 505 260 64 17</p>
-          </div>
-          <div class="col-lg-3 col-12 text-center">
-            <address>Yenimahalle, Ankara, Türkiye</address>
-          </div>
-          <div class="col-lg-3 col-12 text-center">
-            <a href="https://twitter.com/murathanaydgn" target="_blank"
-              ><i class="bi bi-twitter"></i> @murathanaydgn</a
-            >
-          </div>
-        </div>
+
+      <div class="experience-item">
+        <h4>Software Engineer</h4>
+        <p><strong>Aselsan</strong>, Ankara, Türkiye</p>
+        <p class="date-range">Mar 2023 - Sep 2024</p>
+        <ul>
+          <li>Developed command and control software for military vehicles using the .NET framework, adhering to strict defense industry standards for performance and security.</li>
+          <li>Led key project components, including communication systems and module development, ensuring on-time delivery of functional software aligned with project specifications.</li>
+          <li>Served as Scrum Master, facilitating Agile methodologies, conducting daily stand-ups, sprint planning, and retrospectives to enhance team collaboration, productivity, and continuous improvement.</li>
+        </ul>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="js/index.js"></script>
+
+      <div class="experience-item">
+        <h4>Data Science Intern</h4>
+        <p><strong>Vrije Universiteit Amsterdam</strong>, Amsterdam, the Netherlands</p>
+        <p class="date-range">July 2022 - December 2022</p>
+        <ul>
+          <li>Developed a Wizard-of-Oz study setup to collect audio data from participants teaching a reinforcement learning agent in a grid world where the agent was wizarded by another participant, hence simulating prosody-sensitive agent learning.</li>
+          <li>Analyzed prosodic features such as energy, pitch and loudness. Showed that they are statistically significantly correlated with the advantage function, an underlying Markov Decision Process feature used by RL algorithms.</li>
+          <li>Acquired hands-on experience in the research process, including designing and implementing study protocols, collecting and analyzing data and presenting findings.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h4>Research and Development Intern</h4>
+        <p><strong>ART Labs</strong>, İstanbul, Türkiye</p>
+        <p class="date-range">July 2021 - September 2021</p>
+        <ul>
+          <li>Developed a Python application for texture transfer automatization using Machine Learning. Directly worked with R&D Team and presented findings.</li>
+          <li>Successfully executed research projects and developed prototypes for new products, utilizing a combination of technical skills, creativity, and critical thinking.</li>
+          <li>Collaborated with the marketing team to design, develop and implement AR-powered Instagram filters using Spark AR.</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2 id="education">Education</h2>
+
+    <section class="resume-section">
+      <div class="education-item">
+        <h4>Master of Science in Computer Science</h4>
+        <p><strong>University of Freiburg</strong>, Faculty of Engineering, Freiburg, Germany</p>
+        <p class="date-range">Oct 2024 - Present</p>
+      </div>
+
+      <div class="education-item">
+        <h4>Computer Engineering</h4>
+        <p><strong>Koç University</strong>, College of Engineering, İstanbul, Türkiye</p>
+        <p class="date-range">2017 - 2023</p>
+        <ul>
+          <li>GPA: 3.31/4.00</li>
+          <li>Koç University Computer Engineering Best Senior Design Project Award 2022</li>
+          <li>Koç University Vehbi Koç Honor Award 2020 & 2021</li>
+          <li>Koç University Anatolian Scholarship</li>
+        </ul>
+      </div>
+
+      <div class="education-item">
+        <h4>Media and Visual Arts (Double Major)</h4>
+        <p><strong>Koç University</strong>, College of Social Sciences and Humanities, İstanbul, Türkiye</p>
+        <p class="date-range">2020 - 2023</p>
+        <ul>
+          <li>Double Major</li>
+          <li>Certificate and Track Program: Media and Management</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2 id="skills">Skills</h2>
+
+    <section class="resume-section">
+      <h3>Programming Languages</h3>
+      <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">.NET</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">NoSQL</span>
+      </div>
+
+      <h3>Data Science & Machine Learning</h3>
+      <div class="skills-list">
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">Plotly</span>
+        <span class="skill-tag">Seaborn</span>
+        <span class="skill-tag">SciPy</span>
+      </div>
+
+      <h3>Languages</h3>
+      <ul>
+        <li>English (Fluent)</li>
+        <li>Turkish (Native)</li>
+      </ul>
+    </section>
+
+    <h2 id="certifications">Certifications</h2>
+
+    <section class="resume-section">
+      <div class="experience-item">
+        <h4><a href="https://coursera.org/verify/professional-cert/2CA7URYJBG6N" target="_blank">IBM Data Science Professional Certificate</a></h4>
+        <p><strong>Skills:</strong> Data Science, Machine Learning, Data Visualization, Data Analysis, Python, SQL</p>
+        <ul>
+          <li>Acquired expertise in Data Science methodology, utilizing tools such as Python, SQL, and various data visualization techniques.</li>
+          <li>Completed hands-on labs, data analyses, and projects demonstrating proficiency in creating Machine Learning models.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h4><a href="https://www.credly.com/badges/192d8b68-a108-459f-af89-16ea748efb5d/linked_in_profile" target="_blank">ACM Agile Scrum Training</a></h4>
+        <p><strong>Skills:</strong> Scrum, Agile, Scrum Master</p>
+        <ul>
+          <li>Gained a comprehensive understanding of Agile methodologies, experienced Scrum practices, and developed strategies for organizational transformation and effective business implementation.</li>
+          <li>Appointed as the Scrum Master for the software development team, guiding Agile implementations and reinforcing expertise with the ACM Agile Scrum Training certification.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="debug-grid"></div>
+    <script src="js/monospace.js"></script>
   </body>
 </html>
