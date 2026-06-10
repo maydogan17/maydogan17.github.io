@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="murat han aydogan portfolio" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:description"
-      content="A portfolio website to showcase my resume and projects."
-    />
+    <meta property="og:description" content="A portfolio website to showcase my resume and projects." />
     <meta property="og:image" content="imgs/thmb.svg" />
     <meta property="og:url" content="https://maydogan17.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="icon" type="image/png" href="imgs/thmb.png">
+    <link rel="icon" type="image/png" href="imgs/thmb.png" />
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/monospace.css" />
@@ -31,7 +28,7 @@
       </tr>
       <tr>
         <th>Updated</th>
-        <td class="width-min"><time style="white-space: pre;">2025-09</time></td>
+        <td class="width-min"><time style="white-space: pre">2025-09</time></td>
       </tr>
       <tr>
         <th class="width-min">Email</th>
@@ -47,15 +44,15 @@
         <a href="#" class="theme-option" data-theme="light">Light</a>
         <a href="#" class="theme-option" data-theme="dark">Dark</a>
         <a href="#" class="theme-option" data-theme="matrix">Matrix</a>
-        <span style="opacity: 0.6; font-size: 0.8rem; white-space: nowrap;">(or press 'T')</span>
+        <span style="opacity: 0.6; font-size: 0.8rem; white-space: nowrap">(or press 'T')</span>
       </div>
 
       <label class="debug-toggle-label"><input type="checkbox" class="debug-toggle" /> Debug mode</label>
     </div>
 
-<br>
-<br>
-<br>
+    <br />
+    <br />
+    <br />
 
     <nav>
       <ul>
@@ -68,21 +65,34 @@
       </ul>
     </nav>
     <h2 id="about">About</h2>
-    <p> Software Developer and Data Scientist. I hold dual degrees in Computer Engineering and Media & Visual Arts from Koç University and am currently pursuing a master’s in Computer Science at the University of Freiburg.
+    <p>
+      Software Developer and Data Scientist. I hold dual degrees in Computer Engineering and Media & Visual Arts from
+      Koç University and am currently pursuing a master’s in Computer Science at the University of Freiburg.
     </p>
-    <hr>
+    <hr />
 
     <h2 id="projects">Projects</h2>
 
     <section class="project">
-      <h3>AutoML Text Classification: Automated Hyperparameter Optimization and Large Language Model-Based Few-Shot Learning</h3>
+      <h3>
+        AutoML Text Classification: Automated Hyperparameter Optimization and Large Language Model-Based Few-Shot
+        Learning
+      </h3>
       <details>
         <summary>Short summary</summary>
-        <p>Addresses the inefficiency of manual text classification model selection by implementing two automated solutions: Structured AutoML using Optuna framework for Combined Algorithm Selection and Hyperparameter Optimization (CASH) across diverse architectures, and LLM-based few-shot classification leveraging in-context learning capabilities without traditional training phases.</p>
+        <p>
+          Addresses the inefficiency of manual text classification model selection by implementing two automated
+          solutions: Structured AutoML using Optuna framework for Combined Algorithm Selection and Hyperparameter
+          Optimization (CASH) across diverse architectures, and LLM-based few-shot classification leveraging in-context
+          learning capabilities without traditional training phases.
+        </p>
       </details>
-      <p><strong>Technologies:</strong> Python, Optuna, AutoML, Transformers, BERT, CNNs, FFNs, Large Language Models, Few-Shot Learning</p>
+      <p>
+        <strong>Technologies:</strong> Python, Optuna, AutoML, Transformers, BERT, CNNs, FFNs, Large Language Models,
+        Few-Shot Learning
+      </p>
       <div class="project-links">
-        <button onclick="window.location.href='autotext.html'">View Project</button>
+        <button onclick="window.location.href = 'autotext.html'">View Project</button>
       </div>
     </section>
 
@@ -90,23 +100,38 @@
       <h3>LoRA Mensa Food Adaptation</h3>
       <details>
         <summary>Short summary</summary>
-        <p>Investigates adapting Stable Diffusion v1.5 to generate German university cafeteria (Mensa) food images using Low-Rank Adaptation (LoRA). Fine-tuned on just 50 authentic photos with inconsistent lighting and composition, demonstrating that LoRA can effectively learn specific visual styles from minimal data to generate coherent and stylistically accurate results.</p>
+        <p>
+          Investigates adapting Stable Diffusion v1.5 to generate German university cafeteria (Mensa) food images using
+          Low-Rank Adaptation (LoRA). Fine-tuned on just 50 authentic photos with inconsistent lighting and composition,
+          demonstrating that LoRA can effectively learn specific visual styles from minimal data to generate coherent
+          and stylistically accurate results.
+        </p>
       </details>
-      <p><strong>Technologies:</strong> Python, Stable Diffusion, LoRA, ComfyUI, FD, DINOv2, dgm-eval, Computer Vision, Generative AI</p>
+      <p>
+        <strong>Technologies:</strong> Python, Stable Diffusion, LoRA, ComfyUI, FD, DINOv2, dgm-eval, Computer Vision,
+        Generative AI
+      </p>
       <div class="project-links">
-        <button onclick="window.location.href='mensa-food.html'">View Project</button>
+        <button onclick="window.location.href = 'mensa-food.html'">View Project</button>
       </div>
     </section>
 
     <section class="project">
-      <h3>Leveraging Prosody as an Informative Teaching Signal for Agent Learning: Exploratory Studies and Algorithmic Implications</h3>
+      <h3>
+        Leveraging Prosody as an Informative Teaching Signal for Agent Learning: Exploratory Studies and Algorithmic
+        Implications
+      </h3>
       <details>
         <summary>Short summary</summary>
-        <p>This paper shows that prosody, such as intonation in speech, can complement explicit feedback to improve reinforcement learning, while also providing empirical evidence and design guidelines for prosody-sensitive algorithms to enhance human-agent interaction. Published at ICMI '24</p>
+        <p>
+          This paper shows that prosody, such as intonation in speech, can complement explicit feedback to improve
+          reinforcement learning, while also providing empirical evidence and design guidelines for prosody-sensitive
+          algorithms to enhance human-agent interaction. Published at ICMI '24
+        </p>
       </details>
       <p><strong>Technologies:</strong> Python, Machine Learning, Audio Processing, Reinforcement Learning</p>
       <div class="project-links">
-        <button onclick="window.location.href='audiorl.html'">View Project</button>
+        <button onclick="window.location.href = 'audiorl.html'">View Project</button>
       </div>
     </section>
 
@@ -114,27 +139,38 @@
       <h3>Universe: Virtual Campus Life at Koç University</h3>
       <details>
         <summary>Short summary</summary>
-        <p>Universe is a Unity-based virtual campus platform for Koç University, enabling students, faculty, and alumni to experience campus life, attend events, and socialize online when physical gatherings aren't possible.</p>
+        <p>
+          Universe is a Unity-based virtual campus platform for Koç University, enabling students, faculty, and alumni
+          to experience campus life, attend events, and socialize online when physical gatherings aren't possible.
+        </p>
       </details>
       <p><strong>Technologies:</strong> Unity, C#, Virtual Reality, Game Development, 3D Modeling</p>
       <div class="project-links">
-        <button onclick="window.location.href='universe.html'">View Project</button>
+        <button onclick="window.location.href = 'universe.html'">View Project</button>
       </div>
     </section>
-    <hr>
-    
+    <hr />
+
     <h2 id="experience">Experience</h2>
 
     <section class="resume-section">
-
       <div class="experience-item">
         <h4>Software Developer</h4>
         <p><strong>Fraunhofer ISE</strong>, Freiburg, Germany</p>
         <p class="date-range">Jun 2025 - Present</p>
         <ul>
-          <li>Develop Python applications for energy optimization systems integrating bidirectional electric vehicles and solar panels, applying linear programming techniques to maximize energy efficiency.</li>
-          <li>Design and implement Mixed Integer Linear Programming (MILP) solvers using Pyomo, building a modular optimization pipeline with planned expansion to non-linear algorithms.</li>
-          <li>Contribute to a research-driven project, continuously reviewing recent advancements in energy optimization to inform and improve system design.</li>
+          <li>
+            Develop Python applications for energy optimization systems integrating bidirectional electric vehicles and
+            solar panels, applying linear programming techniques to maximize energy efficiency.
+          </li>
+          <li>
+            Design and implement Mixed Integer Linear Programming (MILP) solvers using Pyomo, building a modular
+            optimization pipeline with planned expansion to non-linear algorithms.
+          </li>
+          <li>
+            Contribute to a research-driven project, continuously reviewing recent advancements in energy optimization
+            to inform and improve system design.
+          </li>
         </ul>
       </div>
 
@@ -143,9 +179,18 @@
         <p><strong>Aselsan</strong>, Ankara, Türkiye</p>
         <p class="date-range">Mar 2023 - Sep 2024</p>
         <ul>
-          <li>Developed mission-critical command and control software using .NET, implementing secure communication protocols and high-reliability architecture.</li>
-          <li>Led the design and delivery of communication systems and core software modules, coordinating cross-functional dependencies to maintain project timelines and technical alignment.</li>
-          <li>Took on multiple roles beyond development, serving as Scrum Master to drive Agile practices and team alignment, while managing IT infrastructure including 4 server racks and 100+ virtual machines.</li>
+          <li>
+            Developed mission-critical command and control software using .NET, implementing secure communication
+            protocols and high-reliability architecture.
+          </li>
+          <li>
+            Led the design and delivery of communication systems and core software modules, coordinating
+            cross-functional dependencies to maintain project timelines and technical alignment.
+          </li>
+          <li>
+            Took on multiple roles beyond development, serving as Scrum Master to drive Agile practices and team
+            alignment, while managing IT infrastructure including 4 server racks and 100+ virtual machines.
+          </li>
         </ul>
       </div>
 
@@ -154,9 +199,19 @@
         <p><strong>Vrije Universiteit Amsterdam</strong>, Amsterdam, the Netherlands</p>
         <p class="date-range">July 2022 - December 2022</p>
         <ul>
-          <li>Developed a Wizard-of-Oz study setup to collect audio data from participants teaching a reinforcement learning agent in a grid world where the agent was wizarded by another participant, hence simulating prosody-sensitive agent learning.</li>
-          <li>Analyzed prosodic features such as energy, pitch and loudness. Showed that they are statistically significantly correlated with the advantage function, an underlying Markov Decision Process feature used by RL algorithms.</li>
-          <li>Acquired hands-on experience in the research process, including designing and implementing study protocols, collecting and analyzing data and presenting findings.</li>
+          <li>
+            Selected for the Erasmus+ internship program to conduct research at Vrije Universiteit Amsterdam, focusing
+            on reinforcement learning and human-agent interaction.
+          </li>
+          <li>
+            Designed and implemented a Wizard-of-Oz study to collect audio data from participants teaching a
+            reinforcement learning agent, simulating prosody-sensitive agent learning in a controlled grid world
+            environment.
+          </li>
+          <li>
+            Analyzed prosodic features including energy, pitch and loudness, demonstrating statistically significant
+            correlations with the advantage function of an underlying Markov Decision Process used by RL algorithms.
+          </li>
         </ul>
       </div>
 
@@ -165,9 +220,18 @@
         <p><strong>ART Labs</strong>, İstanbul, Türkiye</p>
         <p class="date-range">July 2021 - September 2021</p>
         <ul>
-          <li>Selected for the Erasmus+ internship program to conduct research at Vrije Universiteit Amsterdam, focusing on reinforcement learning and human-agent interaction.</li>
-          <li>Designed and implemented a Wizard-of-Oz study to collect audio data from participants teaching a reinforcement learning agent, simulating prosody-sensitive agent learning in a controlled grid world environment.</li>
-          <li>Analyzed prosodic features including energy, pitch and loudness, demonstrating statistically significant correlations with the advantage function of an underlying Markov Decision Process used by RL algorithms.</li>
+          <li>
+            Developed a Python application for texture transfer automatization using Machine Learning. Directly worked
+            with R&D Team and presented findings.
+          </li>
+          <li>
+            Successfully executed research projects and developed prototypes for new products, utilizing a combination
+            of technical skills, creativity, and critical thinking.
+          </li>
+          <li>
+            Collaborated with the marketing team to design, develop and implement AR-powered Instagram filters using
+            Spark AR.
+          </li>
         </ul>
       </div>
     </section>
@@ -240,27 +304,47 @@
 
     <section class="resume-section">
       <div class="experience-item">
-        <h4><a href="https://coursera.org/verify/professional-cert/2CA7URYJBG6N" target="_blank">IBM Data Science Professional Certificate</a></h4>
+        <h4>
+          <a href="https://coursera.org/verify/professional-cert/2CA7URYJBG6N" target="_blank"
+            >IBM Data Science Professional Certificate</a
+          >
+        </h4>
         <p><strong>Skills:</strong> Data Science, Machine Learning, Data Visualization, Data Analysis, Python, SQL</p>
         <ul>
-          <li>Acquired expertise in Data Science methodology, utilizing tools such as Python, SQL, and various data visualization techniques.</li>
-          <li>Completed hands-on labs, data analyses, and projects demonstrating proficiency in creating Machine Learning models.</li>
+          <li>
+            Acquired expertise in Data Science methodology, utilizing tools such as Python, SQL, and various data
+            visualization techniques.
+          </li>
+          <li>
+            Completed hands-on labs, data analyses, and projects demonstrating proficiency in creating Machine Learning
+            models.
+          </li>
         </ul>
       </div>
 
       <div class="experience-item">
-        <h4><a href="https://www.credly.com/badges/192d8b68-a108-459f-af89-16ea748efb5d/linked_in_profile" target="_blank">ACM Agile Scrum Training</a></h4>
+        <h4>
+          <a href="https://www.credly.com/badges/192d8b68-a108-459f-af89-16ea748efb5d/linked_in_profile" target="_blank"
+            >ACM Agile Scrum Training</a
+          >
+        </h4>
         <p><strong>Skills:</strong> Scrum, Agile, Scrum Master</p>
         <ul>
-          <li>Gained a comprehensive understanding of Agile methodologies, experienced Scrum practices, and developed strategies for organizational transformation and effective business implementation.</li>
-          <li>Appointed as the Scrum Master for the software development team, guiding Agile implementations and reinforcing expertise with the ACM Agile Scrum Training certification.</li>
+          <li>
+            Gained a comprehensive understanding of Agile methodologies, experienced Scrum practices, and developed
+            strategies for organizational transformation and effective business implementation.
+          </li>
+          <li>
+            Appointed as the Scrum Master for the software development team, guiding Agile implementations and
+            reinforcing expertise with the ACM Agile Scrum Training certification.
+          </li>
         </ul>
       </div>
     </section>
 
-<hr>
+    <hr />
 
-<pre>
+    <pre>
 <div><span style="color: rgb(255, 40, 40);"> </span><span style="color: rgb(255, 120, 0);">  </span><span style="color: rgb(255, 180, 0);">__</span><span style="color: rgb(255, 220, 0);">__</span><span style="color: rgb(220, 255, 0);">__</span><span style="color: rgb(120, 255, 0);">__</span><span style="color: rgb(0, 255, 80);">  </span><span style="color: rgb(0, 255, 160);">__</span><span style="color: rgb(0, 200, 255);">__</span><span style="color: rgb(0, 120, 255);">__</span><span style="color: rgb(120, 80, 255);">__</span><span style="color: rgb(255, 0, 200);">  </span><span style="color: rgb(255, 40, 40);">__</span><span style="color: rgb(255, 120, 0);">__</span><span style="color: rgb(255, 180, 0);">__</span><span style="color: rgb(255, 220, 0);">__</span><span style="color: rgb(220, 255, 0);"> </span>
 <span style="color: rgb(255, 120, 0);">  </span><span style="color: rgb(255, 180, 0);">/ </span><span style="color: rgb(255, 220, 0);">  </span><span style="color: rgb(220, 255, 0);">  </span><span style="color: rgb(120, 255, 0);">  </span><span style="color: rgb(0, 255, 80);"> \</span><span style="color: rgb(0, 255, 160);">/ </span><span style="color: rgb(0, 200, 255);">  </span><span style="color: rgb(0, 120, 255);"> /</span><span style="color: rgb(120, 80, 255);">  </span><span style="color: rgb(255, 0, 200);"> \</span><span style="color: rgb(255, 40, 40);">/ </span><span style="color: rgb(255, 120, 0);">  </span><span style="color: rgb(255, 180, 0);">  </span><span style="color: rgb(255, 220, 0);">  </span><span style="color: rgb(220, 255, 0);"> \</span>
 <span style="color: rgb(255, 120, 0);"> </span><span style="color: rgb(255, 180, 0);">/ </span><span style="color: rgb(255, 220, 0);">  </span><span style="color: rgb(220, 255, 0);">  </span><span style="color: rgb(120, 255, 0);">  </span><span style="color: rgb(0, 255, 80);">  </span><span style="color: rgb(0, 255, 160);">/ </span><span style="color: rgb(0, 200, 255);">  </span><span style="color: rgb(0, 120, 255);">  </span><span style="color: rgb(120, 80, 255);">  </span><span style="color: rgb(255, 0, 200);">  </span><span style="color: rgb(255, 40, 40);">/ </span><span style="color: rgb(255, 120, 0);">  </span><span style="color: rgb(255, 180, 0);">  </span><span style="color: rgb(255, 220, 0);">  </span><span style="color: rgb(220, 255, 0);">  </span><span style="color: rgb(120, 255, 0);">/</span>
@@ -268,7 +352,6 @@
 <span style="color: rgb(255, 180, 0);">\</span><span style="color: rgb(255, 220, 0);">__</span><span style="color: rgb(220, 255, 0);">/_</span><span style="color: rgb(120, 255, 0);">_/</span><span style="color: rgb(0, 255, 80);">__</span><span style="color: rgb(0, 255, 160);">/\</span><span style="color: rgb(0, 200, 255);">__</span><span style="color: rgb(0, 120, 255);">_/</span><span style="color: rgb(120, 80, 255);">__</span><span style="color: rgb(255, 0, 200);">__</span><span style="color: rgb(255, 40, 40);">/\</span><span style="color: rgb(255, 120, 0);">__</span><span style="color: rgb(255, 180, 0);">_/</span><span style="color: rgb(255, 220, 0);">__</span><span style="color: rgb(220, 255, 0);">__</span><span style="color: rgb(120, 255, 0);">/ </span><span style="color: rgb(0, 255, 80);"> </span>
 </div>
 </pre>
-
 
     <div class="debug-grid"></div>
     <script src="js/monospace.js"></script>
